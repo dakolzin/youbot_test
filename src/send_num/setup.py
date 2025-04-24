@@ -20,8 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'test = send_num.test:main',
             'send = send_num.send:main',
+            'send_test_copy = send_num.send_test_copy:main',
+            'test_server_copy = send_num.test_server_copy:main',
         ],
     },
 )
