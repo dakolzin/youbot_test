@@ -186,4 +186,22 @@ ros2 run send_num send_test_copy
 # Параметры по флагам (если нужно указать IP/порт вручную):
 ros2 run send_num send_test_copy -- --ip 127.0.0.1 --port 5000
 ```
+
+# Запуск скрипта для захвата
+
+- [Оглавление](#оглавление)
+
+1. Для запуска скрипта необходимо запустить следующий скрипт
+```bash
+# Перейти в ROS2 workspace и собрать
+cd ~/ros2_ws
+colcon build --packages-select send_num
+source install/setup.bash
+
+# Запустить TCP-клиент
+ros2 run send_num youbot
+
+# Запуск управляющего скрипта
+ros2 run youbot_moveit script
+```
 ##############################################################

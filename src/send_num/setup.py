@@ -23,6 +23,7 @@ setup(
             'send = send_num.send:main',
             'send_test_copy = send_num.send_test_copy:main',
             'test_server_copy = send_num.test_server_copy:main',
+            'youbot = send_num.youbot_test:main',
         ],
     },
 )
