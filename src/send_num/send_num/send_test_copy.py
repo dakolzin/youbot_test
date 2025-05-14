@@ -19,7 +19,7 @@ import socket, json, threading, argparse
 
 # разбор аргументов
 parser = argparse.ArgumentParser(description='TCP-клиент для youBot-TCP-сервера')
-parser.add_argument('--ip',    default='192.168.1.12',
+parser.add_argument('--ip',    default='192.168.1.11',
                     help='IP-адрес youBot-сервера (default: %(default)s)')
 parser.add_argument('--port',  type=int, default=5000,
                     help='TCP-порт сервера (default: %(default)s)')

@@ -55,6 +55,37 @@
       </geometry>
     </collision>
   </link>
+ 
+  <joint name="stand_joint" type="fixed">
+    <axis xyz="0 0 0"/>
+    <origin xyz="0.06 0.06 -0.001"/> 
+    <parent link="plate_link" />
+    <child link="stand" />
+  </joint>
+
+  <link name="stand">
+  </link>
+
+  <joint name="color_cam_joint" type="fixed">
+    <axis xyz="0 0 0"/>
+    <origin xyz="-0.06673 0.04023 0.13603" rpy="-2.0944 0 -0.785398"/> 
+    <parent link="stand" />
+    <child link="color_cam" />
+  </joint>
+
+  <link name="color_cam">
+  </link>
+
+  <joint name="depth_cam_joint" type="fixed">
+    <axis xyz="0 0 0"/>
+    <origin xyz="-0.05613 0.02962 0.13603" rpy="-2.0944 0 -0.785398"/>
+    <parent link="stand" />
+    <child link="depth_cam" />
+  </joint>
+
+  <link name="depth_cam">
+  </link>
+
   <joint name="caster_joint_fl" type="fixed">
     <origin rpy="0 0 0" xyz="0.228 0.158 -0.034"/>
     <axis xyz="0 0 1"/>
@@ -265,7 +296,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.025"/>
       <geometry>
-        <mesh filename="package://youbot_description/meshes/youbot_plate/plate_convex.dae"/>
+        <mesh filename="package://youbot_description/meshes/youbot_plate/plate.dae"/>
       </geometry>
     </collision>
   </link>
@@ -452,6 +483,13 @@
       </geometry>
     </collision>
   </link>
+
+  <link  name="gripper_tcp"/>
+  <joint name="gripper_tcp_joint" type="fixed">
+    <parent link="arm_link_5"/>                 
+    <child  link="gripper_tcp"/>
+    <origin xyz="0 0 0.075" rpy="0 0 0"/>   
+  </joint>
 
   <joint name="gripper_joint" type="fixed">
     <origin rpy="0 0 0" xyz="-0.005 0 0.015"/>

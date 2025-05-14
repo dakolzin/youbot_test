@@ -57,8 +57,77 @@ static bool get_target_pose(const std::string& ip, int port,
   RCLCPP_INFO(log, "Pose: %.3f %.3f %.3f", x, y, z);
   return true;
 }
-/*---------------------------------------------------------------------------*/
 
+/*---------------------------------------------------------------------------*/
+static bool try_pose(moveit::planning_interface::MoveGroupInterface& arm,
+                     const geometry_msgs::msg::PoseStamped& tgt,
+                     const char* tag,
+                     const rclcpp::Logger& log)
+{
+  arm.setPoseTarget(tgt);
+  for (int i = 1; i <= 5; ++i) {
+    RCLCPP_INFO(log, "%s attempt %d/5", tag, i);
+    Plan p;
+    if (arm.plan(p) == moveit::core::MoveItErrorCode::SUCCESS) {
+      if (arm.execute(p) == moveit::core::MoveItErrorCode::SUCCESS) return true;
+    }
+    RCLCPP_WARN(log, "plan/execute failed");
+  }
+  RCLCPP_ERROR(log, "%s FAILED", tag);
+  return false;
+}
+
+/*---------------------------------------------------------------------------*/
+static bool pick_sequence(moveit::planning_interface::MoveGroupInterface& arm,
+                          moveit::planning_interface::MoveGroupInterface& gripper,
+                          const geometry_msgs::msg::PoseStamped& grasp,
+                          const rclcpp::Logger& log)
+{
+  const double dz = 0.01;
+  geometry_msgs::msg::PoseStamped pre = grasp;
+  pre.pose.position.z += dz;
+
+  arm.setPlanningTime(10);
+  arm.setMaxVelocityScalingFactor(0.4);
+  arm.setMaxAccelerationScalingFactor(0.4);
+  arm.setNumPlanningAttempts(20);
+
+  /*---------------- 1. Pre‑grasp ----------------*/
+  if (!try_pose(arm, pre, "[Pre‑grasp]", log)) return false;
+  rclcpp::sleep_for(std::chrono::seconds(1));
+
+  /*---------------- 2. Descend ----------------*/
+  if (!try_pose(arm, grasp, "[Descend]", log)) return false;
+  rclcpp::sleep_for(std::chrono::seconds(1));
+
+  /*---------------- 3. Close gripper ----------------*/
+  RCLCPP_INFO(log, "[Close gripper]");
+  gripper.setNamedTarget("Close");
+  {
+    Plan p;
+    if (gripper.plan(p) != moveit::core::MoveItErrorCode::SUCCESS ||
+        gripper.execute(p) != moveit::core::MoveItErrorCode::SUCCESS)
+      return false;
+  }
+  rclcpp::sleep_for(std::chrono::seconds(1));
+
+  /*---------------- 4. Lift ----------------*/
+  if (!try_pose(arm, pre, "[Lift]", log)) return false;
+  rclcpp::sleep_for(std::chrono::seconds(2));
+
+  /*---------------- 5. Home with object ----------------*/
+  RCLCPP_INFO(log, "[Home with object]");
+  arm.setJointValueTarget({0,0,0,0,0});
+  {
+    Plan p;
+    if (arm.plan(p) != moveit::core::MoveItErrorCode::SUCCESS ||
+        arm.execute(p) != moveit::core::MoveItErrorCode::SUCCESS)
+      return false;
+  }
+  return true;
+}
+
+/*---------------------------------------------------------------------------*/
 int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
@@ -77,8 +146,8 @@ int main(int argc, char** argv)
   arm.setPlannerId(node->declare_parameter("arm_planner", "RRTConnectkConfigDefault"));
   gripper.setPlannerId(node->declare_parameter("gripper_planner", "RRTConnectkConfigDefault"));
 
-  /*---------------- 1. Home ----------------*/
-  RCLCPP_INFO(log, "[1] Home");
+  /*---------------- Home ----------------*/
+  RCLCPP_INFO(log, "[Home]");
   arm.setMaxVelocityScalingFactor(0.5);
   arm.setJointValueTarget({0,0,0,0,0});
   {
@@ -87,8 +156,8 @@ int main(int argc, char** argv)
   }
   rclcpp::sleep_for(std::chrono::seconds(2));
 
-  /*---------------- 2. Open gripper ----------------*/
-  RCLCPP_INFO(log, "[2] Open gripper");
+  /*---------------- Open gripper ----------------*/
+  RCLCPP_INFO(log, "[Open gripper]");
   gripper.setNamedTarget("Open");
   {
     Plan p;
@@ -96,61 +165,21 @@ int main(int argc, char** argv)
   }
   rclcpp::sleep_for(std::chrono::seconds(2));
 
-  /*---- read pose from server ----*/
-  geometry_msgs::msg::PoseStamped pose_grasp;
-  if (!get_target_pose("127.0.0.1", 5000, pose_grasp, log))
-  { rclcpp::shutdown(); return 1; }
-
-  const double dz = 0.05;
-  geometry_msgs::msg::PoseStamped pose_pre = pose_grasp;
-  pose_pre.pose.position.z += dz;
-
-  arm.setPlanningTime(10);
-  arm.setMaxVelocityScalingFactor(0.4);
-  arm.setMaxAccelerationScalingFactor(0.4);
-  arm.setNumPlanningAttempts(20);
-
-  auto try_pose = [&](const geometry_msgs::msg::PoseStamped& tgt, const char* tag)->bool{
-    for (int i=1;i<=5;++i){
-      RCLCPP_INFO(log, "%s attempt %d/5", tag, i);
-      arm.setPoseTarget(tgt);
-      Plan p;
-      if (arm.plan(p) == moveit::core::MoveItErrorCode::SUCCESS){
-        arm.execute(p); return true;
-      }
-      RCLCPP_WARN(log, "plan failed");
+  /*---------------- Main retry loop ----------------*/
+  while (rclcpp::ok()) {
+    geometry_msgs::msg::PoseStamped pose_grasp;
+    if (!get_target_pose("127.0.0.1", 5000, pose_grasp, log)) {
+      RCLCPP_ERROR(log, "Failed to receive pose – aborting.");
+      break;
     }
-    RCLCPP_ERROR(log, "%s FAILED", tag);
-    return false;
-  };
 
-  /*---------------- 3. Pre-grasp with retries ----------------*/
-  if (!try_pose(pose_pre , "[3] Pre-grasp")) { rclcpp::shutdown(); return 1; }
-  rclcpp::sleep_for(std::chrono::seconds(1));
+    if (pick_sequence(arm, gripper, pose_grasp, log)) {
+      RCLCPP_INFO(log, "Pick succeeded.");
+      break;
+    }
 
-  /*---------------- 4. Descend with retries ----------------*/
-  if (!try_pose(pose_grasp, "[4] Descend" )) { rclcpp::shutdown(); return 1; }
-  rclcpp::sleep_for(std::chrono::seconds(1));
-
-  /*---------------- 5. Close gripper ----------------*/
-  RCLCPP_INFO(log, "[5] Close gripper");
-  gripper.setNamedTarget("Close");
-  {
-    Plan p;
-    if (gripper.plan(p) == moveit::core::MoveItErrorCode::SUCCESS) gripper.execute(p);
-  }
-  rclcpp::sleep_for(std::chrono::seconds(1));
-
-  /*---------------- 6. Lift with retries ----------------*/
-  if (!try_pose(pose_pre , "[6] Lift"    )) { rclcpp::shutdown(); return 1; }
-  rclcpp::sleep_for(std::chrono::seconds(2));
-
-  /*---------------- 7. Home with object ----------------*/
-  RCLCPP_INFO(log, "[7] Home with object");
-  arm.setJointValueTarget({0,0,0,0,0});
-  {
-    Plan p;
-    if (arm.plan(p) == moveit::core::MoveItErrorCode::SUCCESS) arm.execute(p);
+    RCLCPP_WARN(log, "Pick failed – requesting new target pose.");
+    rclcpp::sleep_for(std::chrono::seconds(1));
   }
 
   rclcpp::shutdown();

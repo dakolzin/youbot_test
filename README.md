@@ -160,7 +160,7 @@ bash terminal.sh
 
 1. SSH на YouBot
 ```bash
-ssh youbot@192.168.1.12    # пароль: youbot
+ssh youbot@192.168.1.11    # пароль: youbot
 ```
 2. Драйверы YouBot (ROS1)
 ```bash
@@ -191,17 +191,15 @@ ros2 run send_num send_test_copy -- --ip 127.0.0.1 --port 5000
 
 - [Оглавление](#оглавление)
 
-1. Для запуска скрипта необходимо запустить следующий скрипт
+Необходимо запустить следующие команды в разных терминалах:
 ```bash
-# Перейти в ROS2 workspace и собрать
-cd ~/ros2_ws
-colcon build --packages-select send_num
-source install/setup.bash
+# сервер для отправки захватов (для тестов)
+bash 1.sh
 
-# Запустить TCP-клиент
-ros2 run send_num youbot
+# конвертер значений относительно ГСК
+bash 2.sh
 
-# Запуск управляющего скрипта
-ros2 run youbot_moveit script
+# управляющий скрипт
+bash 3.sh
 ```
 ##############################################################
