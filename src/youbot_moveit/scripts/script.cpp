@@ -83,7 +83,7 @@ static bool pick_sequence(moveit::planning_interface::MoveGroupInterface& arm,
                           const geometry_msgs::msg::PoseStamped& grasp,
                           const rclcpp::Logger& log)
 {
-  const double dz = 0.01;
+  const double dz = 0.04;
   geometry_msgs::msg::PoseStamped pre = grasp;
   pre.pose.position.z += dz;
 
