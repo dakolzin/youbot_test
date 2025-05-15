@@ -197,7 +197,7 @@ ros2 run send_num send_test_copy -- --ip 127.0.0.1 --port 5000
 bash 1.sh
 
 # конвертер значений относительно ГСК
-bash 2.sh
+bash test.sh
 
 # управляющий скрипт
 bash 3.sh

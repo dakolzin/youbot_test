@@ -65,8 +65,15 @@ static bool try_pose(moveit::planning_interface::MoveGroupInterface& arm,
                      const rclcpp::Logger& log)
 {
   arm.setPoseTarget(tgt);
-  for (int i = 1; i <= 5; ++i) {
-    RCLCPP_INFO(log, "%s attempt %d/5", tag, i);
+  const auto& p = tgt.pose;
+  RCLCPP_INFO(log,
+              "%s target:  %.3f %.3f %.3f | ori: %.3f %.3f %.3f %.3f",
+              tag,
+              p.position.x, p.position.y, p.position.z,
+              p.orientation.x, p.orientation.y,
+              p.orientation.z, p.orientation.w);
+  for (int i = 1; i <= 2; ++i) {
+    RCLCPP_INFO(log, "%s attempt %d/2", tag, i);
     Plan p;
     if (arm.plan(p) == moveit::core::MoveItErrorCode::SUCCESS) {
       if (arm.execute(p) == moveit::core::MoveItErrorCode::SUCCESS) return true;

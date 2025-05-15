@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# у 11 другие топики
-
-# youbot@youbot-desktop:~/script_ws$ rosrun script_ws server.py
-
-# <pre>root@pod:/youbot# ros2 run send_num send_test_copy</pre>
-
-# root@pod:/youbot# ros2 run send_num youbot
-
-# root@pod:/youbot# ros2 run youbot_moveit script
-
-
 import rospy
 import socket
 import json

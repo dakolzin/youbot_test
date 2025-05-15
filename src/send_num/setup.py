@@ -20,11 +20,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'send = send_num.send:main',
-            'send_test_copy = send_num.send_test_copy:main',
+            'send = send_num.test_send:main',
+            'on_youbot = send_num.send_on_youbot:main',
             'test_server_copy = send_num.test_server_copy:main',
-            'pose_camera_server = send_num.pose_camera_server:main',
-            'pose_bridge = send_num.pose_bridge:main',
+            'camera_server = send_num.pose_camera_server:main',
+            'bridge = send_num.pose_bridge:main',
+            'test_bridge = send_num.pose_bridge_test:main',
         ],
     },
 )

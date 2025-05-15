@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "chrono": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/danil/youbot_test/src/youbot_description"
 }

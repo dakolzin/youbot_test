@@ -4,7 +4,7 @@
   <!-- In order to move the youbot without use wheels-->
   <link name="world" />
 
-  <joint name="world_joint" type="continuous">
+  <joint name="world_joint" type="fixed">
     <axis xyz="0 0 1"/>
     <origin xyz="0 0 0.1"/> 
     <parent link="world" />
@@ -99,7 +99,7 @@
       <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" iyy="0.015218160428" iyz="-0.000004273467" izz="0.011763977943"/>
     </inertial>
   </link>
-  <joint name="wheel_joint_fl" type="continuous">
+  <joint name="wheel_joint_fl" type="fixed">
     <axis xyz="0 1 0"/>
     <limit effort="30" velocity="10"/>
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
@@ -139,7 +139,7 @@
       <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" iyy="0.015218160428" iyz="-0.000004273467" izz="0.011763977943"/>
     </inertial>
   </link>
-  <joint name="wheel_joint_fr" type="continuous">
+  <joint name="wheel_joint_fr" type="fixed">
     <axis xyz="0 1 0"/>
     <limit effort="30" velocity="10"/>
     <dynamics damping="1.0" friction="1.0"/>
@@ -179,7 +179,7 @@
       <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" iyy="0.015218160428" iyz="-0.000004273467" izz="0.011763977943"/>
     </inertial>
   </link>
-  <joint name="wheel_joint_bl" type="continuous">
+  <joint name="wheel_joint_bl" type="fixed">
     <axis xyz="0 1 0"/>
     <limit effort="10" velocity="10"/>
     <limit effort="30" velocity="10"/>
@@ -220,7 +220,7 @@
       <inertia ixx="0.012411765597" ixy="-0.000711733678" ixz="0.00050272983" iyy="0.015218160428" iyz="-0.000004273467" izz="0.011763977943"/>
     </inertial>
   </link>
-  <joint name="wheel_joint_br" type="continuous">
+  <joint name="wheel_joint_br" type="fixed">
     <axis xyz="0 1 0"/>
     <limit effort="30" velocity="10"/>
     <dynamics damping="1.0" friction="1.0"/>
