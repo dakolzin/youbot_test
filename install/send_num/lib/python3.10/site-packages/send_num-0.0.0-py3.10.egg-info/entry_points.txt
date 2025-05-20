@@ -1,0 +1,8 @@
+[console_scripts]
+bridge = send_num.pose_bridge:main
+camera_server = send_num.pose_camera_server:main
+on_youbot = send_num.send_on_youbot:main
+send = send_num.test_send:main
+test_bridge = send_num.pose_bridge_test:main
+test_server_copy = send_num.test_server_copy:main
+

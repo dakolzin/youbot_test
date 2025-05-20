@@ -1,0 +1,20 @@
+[0.155s] Invoking command in '/youbot/build/trac_ik_lib': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/trac_ik_lib -- -j4 -l4
+[0.370s] [ 25%] [32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/nlopt_ik.cpp.o[0m
+[0.371s] [ 50%] [32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/trac_ik.cpp.o[0m
+[0.671s] In file included from [01m[K/youbot/src/trac_ik/trac_ik_lib/src/nlopt_ik.cpp:30[m[K:
+[0.671s] [01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/nlopt_ik.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+[0.672s]    36 | #include [01;31m[K"nlopt.hpp"[m[K
+[0.672s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[0.672s] compilation terminated.
+[0.676s] In file included from [01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/trac_ik.hpp:33[m[K,
+[0.676s]                  from [01m[K/youbot/src/trac_ik/trac_ik_lib/src/trac_ik.cpp:30[m[K:
+[0.676s] [01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/nlopt_ik.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+[0.676s]    36 | #include [01;31m[K"nlopt.hpp"[m[K
+[0.676s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[0.677s] compilation terminated.
+[0.677s] gmake[2]: *** [CMakeFiles/trac_ik_lib.dir/build.make:104: CMakeFiles/trac_ik_lib.dir/src/trac_ik.cpp.o] Error 1
+[0.677s] gmake[2]: *** Waiting for unfinished jobs....
+[0.692s] gmake[2]: *** [CMakeFiles/trac_ik_lib.dir/build.make:90: CMakeFiles/trac_ik_lib.dir/src/nlopt_ik.cpp.o] Error 1
+[0.692s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/trac_ik_lib.dir/all] Error 2
+[0.693s] gmake: *** [Makefile:146: all] Error 2
+[0.697s] Invoked command in '/youbot/build/trac_ik_lib' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/trac_ik_lib -- -j4 -l4

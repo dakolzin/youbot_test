@@ -1,0 +1,2 @@
+Invoking command in '/youbot/build/trac_ik_lib': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/trac_ik/trac_ik_lib -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_lib
+Invoked command in '/youbot/build/trac_ik_lib' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/trac_ik/trac_ik_lib -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_lib

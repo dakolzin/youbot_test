@@ -1,0 +1,80 @@
+[0.017s] Invoking command in '/youbot/build/trac_ik_examples': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /youbot/src/trac_ik/trac_ik_examples -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_examples
+[0.124s] -- The C compiler identification is GNU 11.4.0
+[0.209s] -- The CXX compiler identification is GNU 11.4.0
+[0.222s] -- Detecting C compiler ABI info
+[0.337s] -- Detecting C compiler ABI info - done
+[0.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.353s] -- Detecting C compile features
+[0.353s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.481s] -- Detecting CXX compiler ABI info - done
+[0.496s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.496s] -- Detecting CXX compile features
+[0.498s] -- Detecting CXX compile features - done
+[0.502s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.743s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.828s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.939s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.053s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.063s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.087s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.108s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.222s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.228s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.387s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.433s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.512s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.531s] -- Looking for pthread.h
+[1.650s] -- Looking for pthread.h - found
+[1.655s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.776s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.777s] -- Found Threads: TRUE  
+[1.879s] -- Found trac_ik_lib: 0.1.0 (/youbot/install/trac_ik_lib/share/trac_ik_lib/cmake)
+[1.902s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.902s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.902s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.995s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.175s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.178s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.178s] -- Configured cppcheck include dirs: 
+[2.178s] -- Configured cppcheck exclude dirs and/or files: 
+[2.180s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.180s] -- Configured cpplint exclude dirs and/or files: 
+[2.183s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.183s] -- Added test 'lint_cmake' to check CMake code style
+[2.184s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.186s] -- Added test 'uncrustify' to check C / C++ code style
+[2.186s] -- Configured uncrustify additional arguments: 
+[2.187s] -- Added test 'xmllint' to check XML markup files
+[2.190s] -- Configuring done
+[2.207s] -- Generating done
+[2.219s] -- Build files have been written to: /youbot/build/trac_ik_examples
+[2.233s] Invoked command in '/youbot/build/trac_ik_examples' returned '0': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /youbot/src/trac_ik/trac_ik_examples -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_examples
+[2.235s] Invoking command in '/youbot/build/trac_ik_examples': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /youbot/build/trac_ik_examples -- -j4 -l4
+[2.315s] [ 50%] [32mBuilding CXX object CMakeFiles/ik_tests.dir/src/ik_tests.cpp.o[0m
+[8.189s] [100%] [32m[1mLinking CXX executable ik_tests[0m
+[8.429s] [100%] Built target ik_tests
+[8.449s] Invoked command in '/youbot/build/trac_ik_examples' returned '0': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /youbot/build/trac_ik_examples -- -j4 -l4
+[8.452s] Invoking command in '/youbot/build/trac_ik_examples': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /youbot/build/trac_ik_examples
+[8.463s] -- Install configuration: ""
+[8.464s] -- Execute custom install script
+[8.465s] -- Symlinking: /youbot/install/trac_ik_examples/lib/trac_ik_examples/ik_tests
+[8.492s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/launch/pr2.urdf
+[8.520s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/launch/pr2_arm.launch.py
+[8.533s] -- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/package_run_dependencies/trac_ik_examples
+[8.547s] -- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/parent_prefix_path/trac_ik_examples
+[8.565s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/ament_prefix_path.sh
+[8.575s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/ament_prefix_path.dsv
+[8.589s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/path.sh
+[8.598s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/path.dsv
+[8.609s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.bash
+[8.621s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.sh
+[8.633s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.zsh
+[8.644s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.dsv
+[8.655s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/package.dsv
+[8.667s] -- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/packages/trac_ik_examples
+[8.680s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/cmake/trac_ik_examplesConfig.cmake
+[8.690s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/cmake/trac_ik_examplesConfig-version.cmake
+[8.701s] -- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/package.xml
+[8.718s] Invoked command in '/youbot/build/trac_ik_examples' returned '0': AMENT_PREFIX_PATH=/youbot/install/trac_ik_lib:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble LD_LIBRARY_PATH=/youbot/install/trac_ik_lib/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /youbot/build/trac_ik_examples

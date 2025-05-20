@@ -1,0 +1,377 @@
+[0.515s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.516s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b363cc40700>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b363cc40160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b363cc40160>>, mixin_verb=('build',))
+[0.818s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.820s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.821s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.821s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.821s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.821s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.821s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.822s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/youbot'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'ignore_ament_install'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['colcon_pkg']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'colcon_pkg'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['colcon_meta']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'colcon_meta'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['ros']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'ros'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['cmake', 'python']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'cmake'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'python'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extensions ['python_setup_py']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(materials) by extension 'python_setup_py'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extensions ['ignore', 'ignore_ament_install']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extension 'ignore'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extension 'ignore_ament_install'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extensions ['colcon_pkg']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extension 'colcon_pkg'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extensions ['colcon_meta']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extension 'colcon_meta'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extensions ['ros']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/send_num) by extension 'ros'
+[0.847s] DEBUG:colcon.colcon_core.package_identification:Package 'src/send_num' with type 'ros.ament_python' and name 'send_num'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['ignore', 'ignore_ament_install']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'ignore'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'ignore_ament_install'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['colcon_pkg']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'colcon_pkg'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['colcon_meta']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'colcon_meta'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['ros']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'ros'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['cmake', 'python']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'cmake'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'python'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extensions ['python_setup_py']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik) by extension 'python_setup_py'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['ignore', 'ignore_ament_install']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'ignore'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'ignore_ament_install'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['colcon_pkg']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'colcon_pkg'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['colcon_meta']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'colcon_meta'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['ros']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'ros'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['cmake', 'python']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'cmake'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'python'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extensions ['python_setup_py']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/nlopt) by extension 'python_setup_py'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extensions ['ignore', 'ignore_ament_install']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extension 'ignore'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extension 'ignore_ament_install'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extensions ['colcon_pkg']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extension 'colcon_pkg'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extensions ['colcon_meta']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extension 'colcon_meta'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extensions ['ros']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik) by extension 'ros'
+[0.850s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trac_ik/trac_ik' with type 'ros.ament_cmake' and name 'trac_ik'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extension 'ignore'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extension 'ignore_ament_install'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extensions ['colcon_pkg']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extension 'colcon_pkg'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extensions ['colcon_meta']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extension 'colcon_meta'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extensions ['ros']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_examples) by extension 'ros'
+[0.851s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trac_ik/trac_ik_examples' with type 'ros.ament_cmake' and name 'trac_ik_examples'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extension 'ignore'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extension 'ignore_ament_install'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extensions ['colcon_pkg']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extension 'colcon_pkg'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extensions ['colcon_meta']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extension 'colcon_meta'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extensions ['ros']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_kinematics) by extension 'ros'
+[0.853s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trac_ik/trac_ik_kinematics' with type 'ros.ament_cmake' and name 'trac_ik_kinematics'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extensions ['ignore', 'ignore_ament_install']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extension 'ignore'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extension 'ignore_ament_install'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extensions ['colcon_pkg']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extension 'colcon_pkg'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extensions ['colcon_meta']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extension 'colcon_meta'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extensions ['ros']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_lib) by extension 'ros'
+[0.854s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trac_ik/trac_ik_lib' with type 'ros.ament_cmake' and name 'trac_ik_lib'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_python) by extensions ['ignore', 'ignore_ament_install']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_python) by extension 'ignore'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/trac_ik/trac_ik_python) ignored
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extension 'ignore'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extension 'ignore_ament_install'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extensions ['colcon_pkg']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extension 'colcon_pkg'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extensions ['colcon_meta']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extension 'colcon_meta'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extensions ['ros']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_description) by extension 'ros'
+[0.856s] DEBUG:colcon.colcon_core.package_identification:Package 'src/youbot_description' with type 'ros.ament_cmake' and name 'youbot_description'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extension 'ignore'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extension 'ignore_ament_install'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extensions ['colcon_pkg']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extension 'colcon_pkg'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extensions ['colcon_meta']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extension 'colcon_meta'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extensions ['ros']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/youbot_moveit) by extension 'ros'
+[0.858s] DEBUG:colcon.colcon_core.package_identification:Package 'src/youbot_moveit' with type 'ros.ament_cmake' and name 'youbot_moveit'
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_target' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_clean_cache' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_clean_first' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'cmake_force_configure' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'ament_cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'catkin_cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'send_num' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.907s] DEBUG:colcon.colcon_core.verb:Building package 'send_num' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/send_num', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/send_num', 'merge_install': False, 'path': '/youbot/src/send_num', 'symlink_install': False, 'test_result_base': None}
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_target' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_clean_cache' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_clean_first' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'cmake_force_configure' from command line to 'False'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'ament_cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'catkin_cmake_args' from command line to 'None'
+[0.907s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_lib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.908s] DEBUG:colcon.colcon_core.verb:Building package 'trac_ik_lib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/trac_ik_lib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/trac_ik_lib', 'merge_install': False, 'path': '/youbot/src/trac_ik/trac_ik_lib', 'symlink_install': False, 'test_result_base': None}
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_args' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_target' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.908s] Level 5:colcon.colcon_core.verb:set package 'youbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.908s] DEBUG:colcon.colcon_core.verb:Building package 'youbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/youbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/youbot_description', 'merge_install': False, 'path': '/youbot/src/youbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_target' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.909s] DEBUG:colcon.colcon_core.verb:Building package 'trac_ik_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/trac_ik_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/trac_ik_examples', 'merge_install': False, 'path': '/youbot/src/trac_ik/trac_ik_examples', 'symlink_install': False, 'test_result_base': None}
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] Level 5:colcon.colcon_core.verb:set package 'trac_ik_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.909s] DEBUG:colcon.colcon_core.verb:Building package 'trac_ik_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/trac_ik_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/trac_ik_kinematics', 'merge_install': False, 'path': '/youbot/src/trac_ik/trac_ik_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_args' from command line to 'None'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_target' from command line to 'None'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'youbot_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.910s] DEBUG:colcon.colcon_core.verb:Building package 'youbot_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/youbot_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/youbot_moveit', 'merge_install': False, 'path': '/youbot/src/youbot_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.910s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_args' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_target' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_clean_cache' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_clean_first' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'cmake_force_configure' from command line to 'False'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'ament_cmake_args' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'catkin_cmake_args' from command line to 'None'
+[0.911s] Level 5:colcon.colcon_core.verb:set package 'trac_ik' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.911s] DEBUG:colcon.colcon_core.verb:Building package 'trac_ik' with the following arguments: {'ament_cmake_args': None, 'build_base': '/youbot/build/trac_ik', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/youbot/install/trac_ik', 'merge_install': False, 'path': '/youbot/src/trac_ik/trac_ik', 'symlink_install': False, 'test_result_base': None}
+[0.911s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.912s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.912s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/youbot/src/trac_ik/trac_ik_lib' with build type 'ament_cmake'
+[0.912s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/youbot/src/trac_ik/trac_ik_lib'
+[0.920s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.921s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.921s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.929s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/youbot/src/youbot_description' with build type 'ament_cmake'
+[0.929s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/youbot/src/youbot_description'
+[0.929s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.929s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.934s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/youbot/src/send_num' with build type 'ament_python'
+[0.934s] Level 1:colcon.colcon_core.shell:create_environment_hook('send_num', 'ament_prefix_path')
+[0.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/send_num/share/send_num/hook/ament_prefix_path.ps1'
+[0.936s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/youbot/install/send_num/share/send_num/hook/ament_prefix_path.dsv'
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/send_num/share/send_num/hook/ament_prefix_path.sh'
+[0.938s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.938s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/build/trac_ik_lib': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/trac_ik/trac_ik_lib -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_lib
+[0.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+[1.239s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/youbot/src/send_num'
+[1.239s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.239s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+[1.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_description
+[1.274s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(youbot_description)
+[1.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_description
+[1.287s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description' for CMake module files
+[1.287s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description' for CMake config files
+[1.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('youbot_description', 'cmake_prefix_path')
+[1.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.ps1'
+[1.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.dsv'
+[1.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.sh'
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/bin'
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/lib/pkgconfig/youbot_description.pc'
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/lib/python3.10/site-packages'
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/bin'
+[1.291s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.ps1'
+[1.292s] INFO:colcon.colcon_core.shell:Creating package descriptor '/youbot/install/youbot_description/share/youbot_description/package.dsv'
+[1.293s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.sh'
+[1.294s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.bash'
+[1.296s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.zsh'
+[1.298s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/youbot/install/youbot_description/share/colcon-core/packages/youbot_description)
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(youbot_description)
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description' for CMake module files
+[1.300s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description' for CMake config files
+[1.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('youbot_description', 'cmake_prefix_path')
+[1.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.ps1'
+[1.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.dsv'
+[1.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_description/share/youbot_description/hook/cmake_prefix_path.sh'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/bin'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/lib/pkgconfig/youbot_description.pc'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/lib/python3.10/site-packages'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_description/bin'
+[1.303s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.ps1'
+[1.303s] INFO:colcon.colcon_core.shell:Creating package descriptor '/youbot/install/youbot_description/share/youbot_description/package.dsv'
+[1.304s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.sh'
+[1.304s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.bash'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_description/share/youbot_description/package.zsh'
+[1.305s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/youbot/install/youbot_description/share/colcon-core/packages/youbot_description)
+[1.305s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/youbot/src/youbot_moveit' with build type 'ament_cmake'
+[1.306s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/youbot/src/youbot_moveit'
+[1.306s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.306s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[1.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[1.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit
+[1.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(youbot_moveit)
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit' for CMake module files
+[1.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit' for CMake config files
+[1.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('youbot_moveit', 'cmake_prefix_path')
+[1.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.ps1'
+[1.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.dsv'
+[1.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.sh'
+[1.609s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/bin'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib/pkgconfig/youbot_moveit.pc'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib/python3.10/site-packages'
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/bin'
+[1.610s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/youbot/install/youbot_moveit/share/youbot_moveit/package.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.sh'
+[1.612s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.bash'
+[1.612s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.zsh'
+[1.612s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/youbot/install/youbot_moveit/share/colcon-core/packages/youbot_moveit)
+[1.613s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(youbot_moveit)
+[1.613s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit' for CMake module files
+[1.614s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit' for CMake config files
+[1.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('youbot_moveit', 'cmake_prefix_path')
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.ps1'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.dsv'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/youbot/install/youbot_moveit/share/youbot_moveit/hook/cmake_prefix_path.sh'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/bin'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib/pkgconfig/youbot_moveit.pc'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/lib/python3.10/site-packages'
+[1.617s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/youbot_moveit/bin'
+[1.617s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.ps1'
+[1.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/youbot/install/youbot_moveit/share/youbot_moveit/package.dsv'
+[1.619s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.sh'
+[1.619s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.bash'
+[1.620s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/youbot_moveit/share/youbot_moveit/package.zsh'
+[1.620s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/youbot/install/youbot_moveit/share/colcon-core/packages/youbot_moveit)
+[1.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/youbot/src/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/send_num build --build-base /youbot/build/send_num/build install --record /youbot/build/send_num/install.log --single-version-externally-managed install_data
+[2.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/youbot/build/trac_ik_lib' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/trac_ik/trac_ik_lib -DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_lib
+[2.103s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trac_ik_lib)
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib' for CMake module files
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib' for CMake config files
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib/bin'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib/lib/pkgconfig/trac_ik_lib.pc'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib/lib/python3.10/site-packages'
+[2.104s] Level 1:colcon.colcon_core.environment:checking '/youbot/install/trac_ik_lib/bin'
+[2.104s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/trac_ik_lib/share/trac_ik_lib/package.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/youbot/install/trac_ik_lib/share/trac_ik_lib/package.dsv'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/trac_ik_lib/share/trac_ik_lib/package.sh'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/trac_ik_lib/share/trac_ik_lib/package.bash'
+[2.106s] INFO:colcon.colcon_core.shell:Creating package script '/youbot/install/trac_ik_lib/share/trac_ik_lib/package.zsh'
+[2.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/youbot/install/trac_ik_lib/share/colcon-core/packages/trac_ik_lib)
+[2.224s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.225s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.247s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.247s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.247s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.247s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.253s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[2.254s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.255s] INFO:colcon.colcon_core.shell:Creating prefix script '/youbot/install/local_setup.ps1'
+[2.257s] INFO:colcon.colcon_core.shell:Creating prefix util module '/youbot/install/_local_setup_util_ps1.py'
+[2.259s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/youbot/install/setup.ps1'
+[2.261s] INFO:colcon.colcon_core.shell:Creating prefix script '/youbot/install/local_setup.sh'
+[2.262s] INFO:colcon.colcon_core.shell:Creating prefix util module '/youbot/install/_local_setup_util_sh.py'
+[2.263s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/youbot/install/setup.sh'
+[2.264s] INFO:colcon.colcon_core.shell:Creating prefix script '/youbot/install/local_setup.bash'
+[2.265s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/youbot/install/setup.bash'
+[2.267s] INFO:colcon.colcon_core.shell:Creating prefix script '/youbot/install/local_setup.zsh'
+[2.267s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/youbot/install/setup.zsh'

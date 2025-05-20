@@ -1,0 +1,15 @@
+/youbot/install/trac_ik/share/ament_index/resource_index/package_run_dependencies/trac_ik
+/youbot/install/trac_ik/share/ament_index/resource_index/parent_prefix_path/trac_ik
+/youbot/install/trac_ik/share/trac_ik/environment/ament_prefix_path.sh
+/youbot/install/trac_ik/share/trac_ik/environment/ament_prefix_path.dsv
+/youbot/install/trac_ik/share/trac_ik/environment/path.sh
+/youbot/install/trac_ik/share/trac_ik/environment/path.dsv
+/youbot/install/trac_ik/share/trac_ik/local_setup.bash
+/youbot/install/trac_ik/share/trac_ik/local_setup.sh
+/youbot/install/trac_ik/share/trac_ik/local_setup.zsh
+/youbot/install/trac_ik/share/trac_ik/local_setup.dsv
+/youbot/install/trac_ik/share/trac_ik/package.dsv
+/youbot/install/trac_ik/share/ament_index/resource_index/packages/trac_ik
+/youbot/install/trac_ik/share/trac_ik/cmake/trac_ikConfig.cmake
+/youbot/install/trac_ik/share/trac_ik/cmake/trac_ikConfig-version.cmake
+/youbot/install/trac_ik/share/trac_ik/package.xml

@@ -1,0 +1,9 @@
+/youbot/build/youbot_description/CMakeFiles/uninstall.dir
+/youbot/build/youbot_description/CMakeFiles/youbot_description_uninstall.dir
+/youbot/build/youbot_description/CMakeFiles/test.dir
+/youbot/build/youbot_description/CMakeFiles/edit_cache.dir
+/youbot/build/youbot_description/CMakeFiles/rebuild_cache.dir
+/youbot/build/youbot_description/CMakeFiles/list_install_components.dir
+/youbot/build/youbot_description/CMakeFiles/install.dir
+/youbot/build/youbot_description/CMakeFiles/install/local.dir
+/youbot/build/youbot_description/CMakeFiles/install/strip.dir

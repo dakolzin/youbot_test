@@ -1,0 +1,230 @@
+[0.000000] (-) TimerEvent: {}
+[0.000789] (send_num) JobQueued: {'identifier': 'send_num', 'dependencies': OrderedDict()}
+[0.001019] (youbot_description) JobQueued: {'identifier': 'youbot_description', 'dependencies': OrderedDict()}
+[0.001088] (youbot_moveit) JobQueued: {'identifier': 'youbot_moveit', 'dependencies': OrderedDict([('youbot_description', '/youbot/install/youbot_description')])}
+[0.001201] (youbot_description) JobStarted: {'identifier': 'youbot_description'}
+[0.014821] (send_num) JobStarted: {'identifier': 'send_num'}
+[0.022747] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'cmake'}
+[0.024195] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'build'}
+[0.024285] (youbot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/youbot_description', '--', '-j4', '-l4'], 'cwd': '/youbot/build/youbot_description', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '205'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/youbot/build/youbot_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099695] (-) TimerEvent: {}
+[0.200003] (-) TimerEvent: {}
+[0.301858] (-) TimerEvent: {}
+[0.322731] (youbot_description) CommandEnded: {'returncode': 0}
+[0.323885] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'install'}
+[0.334568] (youbot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/youbot_description'], 'cwd': '/youbot/build/youbot_description', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '205'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/youbot/build/youbot_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.349971] (youbot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.350578] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/launch\n'}
+[0.351085] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/launch/rviz.launch.py\n'}
+[0.351766] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/rviz\n'}
+[0.352243] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/rviz/view.rviz\n'}
+[0.352702] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/urdf\n'}
+[0.352860] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/urdf/youbot.urdf\n'}
+[0.352955] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes\n'}
+[0.353024] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm\n'}
+[0.353087] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl\n'}
+[0.353149] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl\n'}
+[0.353211] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl\n'}
+[0.353273] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.dae\n'}
+[0.353334] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2.dae\n'}
+[0.353395] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl_Zone.Identifier\n'}
+[0.353457] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl\n'}
+[0.353517] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4_convex.dae\n'}
+[0.353578] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl_Zone.Identifier\n'}
+[0.353638] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4.dae\n'}
+[0.353699] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5.dae\n'}
+[0.353760] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl_Zone.Identifier\n'}
+[0.353822] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl\n'}
+[0.353882] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0.dae\n'}
+[0.353953] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3_convex.dae\n'}
+[0.354018] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5_convex.dae\n'}
+[0.354079] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl_Zone.Identifier\n'}
+[0.354139] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1.dae\n'}
+[0.354204] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl\n'}
+[0.354267] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl_Zone.Identifier\n'}
+[0.354330] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl_Zone.Identifier\n'}
+[0.354392] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.dae\n'}
+[0.354464] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3.dae\n'}
+[0.354536] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl\n'}
+[0.354599] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1_convex.dae\n'}
+[0.354660] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl_Zone.Identifier\n'}
+[0.354721] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors\n'}
+[0.354782] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.tga\n'}
+[0.359870] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo_convex.dae\n'}
+[0.359959] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.dae\n'}
+[0.360055] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.dae\n'}
+[0.360119] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo.dae\n'}
+[0.360181] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.dae\n'}
+[0.360241] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/microsoft_lifecam.dae\n'}
+[0.360302] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.png\n'}
+[0.360362] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.png\n'}
+[0.360423] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate\n'}
+[0.360483] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate_convex.dae\n'}
+[0.360543] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.dae\n'}
+[0.360603] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.stl\n'}
+[0.360663] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base\n'}
+[0.360724] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl\n'}
+[0.360784] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl_Zone.Identifier\n'}
+[0.360843] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae_Zone.Identifier\n'}
+[0.360904] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae\n'}
+[0.360975] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base.dae\n'}
+[0.361045] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae_Zone.Identifier\n'}
+[0.361105] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae\n'}
+[0.361164] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae_Zone.Identifier\n'}
+[0.361223] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae\n'}
+[0.361282] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae_Zone.Identifier\n'}
+[0.361342] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.dae\n'}
+[0.361401] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae\n'}
+[0.361461] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae_Zone.Identifier\n'}
+[0.361520] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae\n'}
+[0.361579] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper\n'}
+[0.361638] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger.dae\n'}
+[0.361704] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger_convex.dae\n'}
+[0.361763] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm_convex.dae\n'}
+[0.361821] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm.dae\n'}
+[0.361880] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/config\n'}
+[0.361958] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/config/youbot.yaml\n'}
+[0.362021] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/config/rviz.rviz\n'}
+[0.362081] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf\n'}
+[0.362140] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot\n'}
+[0.362198] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.config\n'}
+[0.362257] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes\n'}
+[0.362316] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper\n'}
+[0.362387] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm.stl\n'}
+[0.362446] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm_convex.stl\n'}
+[0.363095] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger_convex.stl\n'}
+[0.363173] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger.stl\n'}
+[0.363233] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm\n'}
+[0.363293] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2_convex.stl\n'}
+[0.363352] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2.dae\n'}
+[0.363411] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3_convex.stl\n'}
+[0.363469] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4.dae\n'}
+[0.363527] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5.dae\n'}
+[0.363585] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0_convex.stl\n'}
+[0.363644] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1_convex.stl\n'}
+[0.363702] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0.dae\n'}
+[0.363760] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1.dae\n'}
+[0.363818] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4_convex.stl\n'}
+[0.363876] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3.dae\n'}
+[0.363946] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5_convex.stl\n'}
+[0.364010] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base\n'}
+[0.364069] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base_convex.stl\n'}
+[0.364126] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-left_wheel.dae\n'}
+[0.364185] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base.dae\n'}
+[0.364243] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-right_wheel.dae\n'}
+[0.364301] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-right_wheel.dae\n'}
+[0.364359] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-left_wheel.dae\n'}
+[0.364425] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate\n'}
+[0.364484] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate.dae\n'}
+[0.364542] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate_convex.stl\n'}
+[0.364606] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials\n'}
+[0.364664] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts\n'}
+[0.364721] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts/youbot.material\n'}
+[0.364779] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.sdf\n'}
+[0.364837] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/worlds\n'}
+[0.364896] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/ament_index/resource_index/package_run_dependencies/youbot_description\n'}
+[0.364966] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/ament_index/resource_index/parent_prefix_path/youbot_description\n'}
+[0.365027] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.sh\n'}
+[0.365085] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.dsv\n'}
+[0.365145] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/environment/path.sh\n'}
+[0.365203] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/environment/path.dsv\n'}
+[0.365271] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/local_setup.bash\n'}
+[0.365328] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/local_setup.sh\n'}
+[0.365386] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/local_setup.zsh\n'}
+[0.365444] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/local_setup.dsv\n'}
+[0.365501] (youbot_description) StdoutLine: {'line': b'-- Installing: /youbot/install/youbot_description/share/youbot_description/package.dsv\n'}
+[0.365559] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/ament_index/resource_index/packages/youbot_description\n'}
+[0.365617] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig.cmake\n'}
+[0.365674] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig-version.cmake\n'}
+[0.365731] (youbot_description) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_description/share/youbot_description/package.xml\n'}
+[0.366260] (youbot_description) CommandEnded: {'returncode': 0}
+[0.402753] (youbot_description) JobEnded: {'identifier': 'youbot_description', 'rc': 0}
+[0.403237] (-) TimerEvent: {}
+[0.403339] (youbot_moveit) JobStarted: {'identifier': 'youbot_moveit'}
+[0.415188] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'cmake'}
+[0.417546] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'build'}
+[0.417602] (youbot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/youbot_moveit', '--', '-j4', '-l4'], 'cwd': '/youbot/build/youbot_moveit', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '205'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_description:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_description:/opt/ros/humble')]), 'shell': False}
+[0.503956] (-) TimerEvent: {}
+[0.504334] (youbot_moveit) StdoutLine: {'line': b'[100%] Built target script\n'}
+[0.523636] (youbot_moveit) CommandEnded: {'returncode': 0}
+[0.525049] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'install'}
+[0.525180] (youbot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/youbot_moveit'], 'cwd': '/youbot/build/youbot_moveit', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('ROS_DOMAIN_ID', '205'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_description:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_description:/opt/ros/humble')]), 'shell': False}
+[0.535336] (youbot_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.535995] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/package_run_dependencies/youbot_moveit\n'}
+[0.536347] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/parent_prefix_path/youbot_moveit\n'}
+[0.536420] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.sh\n'}
+[0.536799] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.dsv\n'}
+[0.537468] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.sh\n'}
+[0.537742] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.dsv\n'}
+[0.537813] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.bash\n'}
+[0.537875] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.sh\n'}
+[0.537946] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.zsh\n'}
+[0.538010] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.dsv\n'}
+[0.538069] (youbot_moveit) StdoutLine: {'line': b'-- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/package.dsv\n'}
+[0.538128] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/packages/youbot_moveit\n'}
+[0.538188] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig.cmake\n'}
+[0.538259] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig-version.cmake\n'}
+[0.538319] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/package.xml\n'}
+[0.538377] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/lib/youbot_moveit/script\n'}
+[0.538435] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch\n'}
+[0.538493] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/warehouse_db.launch.py\n'}
+[0.538553] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/spawn_controllers.launch.py\n'}
+[0.538610] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/rsp.launch.py\n'}
+[0.538668] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/demo.launch.py\n'}
+[0.538728] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/moveit_rviz.launch.py\n'}
+[0.542470] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/move_group.launch.py\n'}
+[0.543131] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/setup_assistant.launch.py\n'}
+[0.543230] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/static_virtual_joint_tfs.launch.py\n'}
+[0.543298] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config\n'}
+[0.543359] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit.rviz\n'}
+[0.543421] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.ros2_control.xacro\n'}
+[0.543480] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/joint_limits.yaml\n'}
+[0.543539] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.urdf.xacro\n'}
+[0.543596] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit_controllers.yaml\n'}
+[0.543654] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/kinematics.yaml\n'}
+[0.543712] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/initial_positions.yaml\n'}
+[0.543785] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/ros2_controllers.yaml\n'}
+[0.543845] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.srdf\n'}
+[0.543904] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/ompl_planning.yaml\n'}
+[0.543989] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/pilz_cartesian_limits.yaml\n'}
+[0.544115] (youbot_moveit) StdoutLine: {'line': b'-- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/.setup_assistant\n'}
+[0.546066] (youbot_moveit) CommandEnded: {'returncode': 0}
+[0.559067] (youbot_moveit) JobEnded: {'identifier': 'youbot_moveit', 'rc': 0}
+[0.604136] (-) TimerEvent: {}
+[0.704421] (-) TimerEvent: {}
+[0.764108] (send_num) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/send_num', 'build', '--build-base', '/youbot/build/send_num/build', 'install', '--record', '/youbot/build/send_num/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/youbot/src/send_num', 'env': {'HOSTNAME': 'danil-H110M-S2PV', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'unix:1', 'LANG': 'C.UTF-8', 'ROS_DOMAIN_ID': '205', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/youbot/build/send_num', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1'}, 'shell': False}
+[0.806962] (-) TimerEvent: {}
+[0.907411] (-) TimerEvent: {}
+[1.007667] (-) TimerEvent: {}
+[1.028717] (send_num) StdoutLine: {'line': b'running egg_info\n'}
+[1.030113] (send_num) StdoutLine: {'line': b'writing ../../build/send_num/send_num.egg-info/PKG-INFO\n'}
+[1.030884] (send_num) StdoutLine: {'line': b'writing dependency_links to ../../build/send_num/send_num.egg-info/dependency_links.txt\n'}
+[1.031003] (send_num) StdoutLine: {'line': b'writing entry points to ../../build/send_num/send_num.egg-info/entry_points.txt\n'}
+[1.031076] (send_num) StdoutLine: {'line': b'writing requirements to ../../build/send_num/send_num.egg-info/requires.txt\n'}
+[1.031140] (send_num) StdoutLine: {'line': b'writing top-level names to ../../build/send_num/send_num.egg-info/top_level.txt\n'}
+[1.032610] (send_num) StdoutLine: {'line': b"reading manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'\n"}
+[1.033580] (send_num) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.034272] (send_num) StdoutLine: {'line': b"writing manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'\n"}
+[1.034395] (send_num) StdoutLine: {'line': b'running build\n'}
+[1.034464] (send_num) StdoutLine: {'line': b'running build_py\n'}
+[1.034526] (send_num) StdoutLine: {'line': b'copying send_num/pose_camera_server.py -> /youbot/build/send_num/build/lib/send_num\n'}
+[1.035440] (send_num) StdoutLine: {'line': b'running install\n'}
+[1.035593] (send_num) StdoutLine: {'line': b'running install_lib\n'}
+[1.036346] (send_num) StdoutLine: {'line': b'copying /youbot/build/send_num/build/lib/send_num/pose_camera_server.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num\n'}
+[1.037150] (send_num) StdoutLine: {'line': b'byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_camera_server.py to pose_camera_server.cpython-310.pyc\n'}
+[1.037748] (send_num) StdoutLine: {'line': b'running install_data\n'}
+[1.038864] (send_num) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.040139] (send_num) StdoutLine: {'line': b"removing '/youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.040471] (send_num) StdoutLine: {'line': b'Copying ../../build/send_num/send_num.egg-info to /youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info\n'}
+[1.041435] (send_num) StdoutLine: {'line': b'running install_scripts\n'}
+[1.068680] (send_num) StdoutLine: {'line': b'Installing bridge script to /youbot/install/send_num/lib/send_num\n'}
+[1.069235] (send_num) StdoutLine: {'line': b'Installing camera_server script to /youbot/install/send_num/lib/send_num\n'}
+[1.069332] (send_num) StdoutLine: {'line': b'Installing on_youbot script to /youbot/install/send_num/lib/send_num\n'}
+[1.069400] (send_num) StdoutLine: {'line': b'Installing send script to /youbot/install/send_num/lib/send_num\n'}
+[1.069486] (send_num) StdoutLine: {'line': b'Installing test_bridge script to /youbot/install/send_num/lib/send_num\n'}
+[1.069549] (send_num) StdoutLine: {'line': b'Installing test_server_copy script to /youbot/install/send_num/lib/send_num\n'}
+[1.069610] (send_num) StdoutLine: {'line': b"writing list of installed files to '/youbot/build/send_num/install.log'\n"}
+[1.108689] (send_num) CommandEnded: {'returncode': 0}
+[1.109103] (-) TimerEvent: {}
+[1.115639] (send_num) JobEnded: {'identifier': 'send_num', 'rc': 0}
+[1.116550] (-) EventReactorShutdown: {}

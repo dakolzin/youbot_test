@@ -1,0 +1,9 @@
+/youbot/build/trac_ik/CMakeFiles/uninstall.dir
+/youbot/build/trac_ik/CMakeFiles/trac_ik_uninstall.dir
+/youbot/build/trac_ik/CMakeFiles/test.dir
+/youbot/build/trac_ik/CMakeFiles/edit_cache.dir
+/youbot/build/trac_ik/CMakeFiles/rebuild_cache.dir
+/youbot/build/trac_ik/CMakeFiles/list_install_components.dir
+/youbot/build/trac_ik/CMakeFiles/install.dir
+/youbot/build/trac_ik/CMakeFiles/install/local.dir
+/youbot/build/trac_ik/CMakeFiles/install/strip.dir

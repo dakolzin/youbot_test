@@ -1,0 +1,2 @@
+source;share/youbot_moveit/environment/ament_prefix_path.sh
+source;share/youbot_moveit/environment/path.sh

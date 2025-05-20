@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing send_num.egg-info/PKG-INFO
+writing dependency_links to send_num.egg-info/dependency_links.txt
+writing entry points to send_num.egg-info/entry_points.txt
+writing requirements to send_num.egg-info/requires.txt
+writing top-level names to send_num.egg-info/top_level.txt
+reading manifest file 'send_num.egg-info/SOURCES.txt'
+writing manifest file 'send_num.egg-info/SOURCES.txt'
+running build_ext
+Creating /youbot/install/send_num/lib/python3.10/site-packages/send-num.egg-link (link to .)
+Installing bridge script to /youbot/install/send_num/lib/send_num
+Installing camera_server script to /youbot/install/send_num/lib/send_num
+Installing on_youbot script to /youbot/install/send_num/lib/send_num
+Installing send script to /youbot/install/send_num/lib/send_num
+Installing test_bridge script to /youbot/install/send_num/lib/send_num
+Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+
+Installed /youbot/build/send_num
+running symlink_data
+symbolically linking /youbot/build/send_num/resource/send_num -> /youbot/install/send_num/share/ament_index/resource_index/packages
+symbolically linking /youbot/build/send_num/package.xml -> /youbot/install/send_num/share/send_num

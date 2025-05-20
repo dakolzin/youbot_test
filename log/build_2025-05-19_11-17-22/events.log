@@ -1,0 +1,878 @@
+[0.000000] (-) TimerEvent: {}
+[0.000480] (send_num) JobQueued: {'identifier': 'send_num', 'dependencies': OrderedDict()}
+[0.000541] (trac_ik_lib) JobQueued: {'identifier': 'trac_ik_lib', 'dependencies': OrderedDict()}
+[0.000565] (youbot_description) JobQueued: {'identifier': 'youbot_description', 'dependencies': OrderedDict()}
+[0.000584] (trac_ik_examples) JobQueued: {'identifier': 'trac_ik_examples', 'dependencies': OrderedDict([('trac_ik_lib', '/youbot/install/trac_ik_lib')])}
+[0.000618] (trac_ik_kinematics) JobQueued: {'identifier': 'trac_ik_kinematics', 'dependencies': OrderedDict([('trac_ik_lib', '/youbot/install/trac_ik_lib')])}
+[0.000644] (youbot_moveit) JobQueued: {'identifier': 'youbot_moveit', 'dependencies': OrderedDict([('youbot_description', '/youbot/install/youbot_description')])}
+[0.000664] (trac_ik) JobQueued: {'identifier': 'trac_ik', 'dependencies': OrderedDict([('trac_ik_lib', '/youbot/install/trac_ik_lib'), ('trac_ik_examples', '/youbot/install/trac_ik_examples'), ('trac_ik_kinematics', '/youbot/install/trac_ik_kinematics')])}
+[0.004748] (trac_ik_lib) JobStarted: {'identifier': 'trac_ik_lib'}
+[0.016958] (youbot_description) JobStarted: {'identifier': 'youbot_description'}
+[0.022232] (send_num) JobStarted: {'identifier': 'send_num'}
+[0.032725] (trac_ik_lib) JobProgress: {'identifier': 'trac_ik_lib', 'progress': 'cmake'}
+[0.033489] (trac_ik_lib) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/trac_ik/trac_ik_lib', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_lib'], 'cwd': '/youbot/build/trac_ik_lib', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_lib'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[0.037571] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'cmake'}
+[0.038692] (youbot_description) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/youbot_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_description'], 'cwd': '/youbot/build/youbot_description', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[0.101806] (-) TimerEvent: {}
+[0.202192] (-) TimerEvent: {}
+[0.302701] (-) TimerEvent: {}
+[0.391688] (trac_ik_lib) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.391914] (trac_ik_lib) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.392001] (trac_ik_lib) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.392098] (trac_ik_lib) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[0.392162] (trac_ik_lib) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.392222] (trac_ik_lib) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.394054] (youbot_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.395827] (youbot_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.397729] (youbot_description) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[0.402795] (-) TimerEvent: {}
+[0.499244] (trac_ik_lib) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.503853] (youbot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.504016] (-) TimerEvent: {}
+[0.571529] (trac_ik_lib) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.583853] (youbot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.599876] (youbot_description) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/youbot_description\n'}
+[0.604112] (-) TimerEvent: {}
+[0.607682] (youbot_description) CommandEnded: {'returncode': 0}
+[0.608930] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'build'}
+[0.610011] (youbot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/youbot_description', '--', '-j4', '-l4'], 'cwd': '/youbot/build/youbot_description', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[0.636643] (trac_ik_lib) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.662294] (trac_ik_lib) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.666282] (youbot_description) CommandEnded: {'returncode': 0}
+[0.667563] (youbot_description) JobProgress: {'identifier': 'youbot_description', 'progress': 'install'}
+[0.679685] (youbot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/youbot_description'], 'cwd': '/youbot/build/youbot_description', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[0.690731] (youbot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.692070] (youbot_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.693144] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/launch/rviz.launch.py\n'}
+[0.704225] (-) TimerEvent: {}
+[0.707193] (trac_ik_lib) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.710718] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/rviz/view.rviz\n'}
+[0.722426] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/urdf/youbot.urdf\n'}
+[0.734598] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.dae\n'}
+[0.752930] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.png\n'}
+[0.770452] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.dae\n'}
+[0.781935] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.png\n'}
+[0.793819] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo.dae\n'}
+[0.804299] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo_convex.dae\n'}
+[0.805886] (-) TimerEvent: {}
+[0.817134] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.dae\n'}
+[0.835897] (send_num) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/youbot/build/send_num/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/youbot/build/send_num', 'env': {'HOSTNAME': 'danil-H110M-S2PV', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/youbot/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'unix:1', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '220', 'AMENT_PREFIX_PATH': '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble', 'PWD': '/youbot/build/send_num', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/youbot/install/youbot_moveit'}, 'shell': False}
+[0.836580] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.tga\n'}
+[0.840239] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/microsoft_lifecam.dae\n'}
+[0.843234] (trac_ik_lib) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.850811] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0.dae\n'}
+[0.852136] (trac_ik_lib) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.861427] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.dae\n'}
+[0.872440] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl\n'}
+[0.883967] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl_Zone.Identifier\n'}
+[0.895556] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1.dae\n'}
+[0.906959] (-) TimerEvent: {}
+[0.907784] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1_convex.dae\n'}
+[0.920240] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2.dae\n'}
+[0.932805] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.dae\n'}
+[0.942568] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl\n'}
+[0.953943] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl_Zone.Identifier\n'}
+[0.966899] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3.dae\n'}
+[0.978781] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3_convex.dae\n'}
+[0.991656] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4.dae\n'}
+[1.004909] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4_convex.dae\n'}
+[1.007028] (-) TimerEvent: {}
+[1.019075] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5.dae\n'}
+[1.036652] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5_convex.dae\n'}
+[1.051190] (trac_ik_lib) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.052003] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl\n'}
+[1.064331] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl_Zone.Identifier\n'}
+[1.077153] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl\n'}
+[1.096142] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl_Zone.Identifier\n'}
+[1.102687] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl\n'}
+[1.105971] (trac_ik_lib) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.107113] (-) TimerEvent: {}
+[1.115133] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl_Zone.Identifier\n'}
+[1.128167] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl\n'}
+[1.148994] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl_Zone.Identifier\n'}
+[1.153194] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl\n'}
+[1.165596] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl_Zone.Identifier\n'}
+[1.178575] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae\n'}
+[1.191636] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae_Zone.Identifier\n'}
+[1.191948] (trac_ik_lib) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.192603] (send_num) StdoutLine: {'line': b'running develop\n'}
+[1.205410] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae\n'}
+[1.207203] (-) TimerEvent: {}
+[1.222049] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae_Zone.Identifier\n'}
+[1.230318] (trac_ik_lib) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.233218] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base.dae\n'}
+[1.249330] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.dae\n'}
+[1.262632] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl\n'}
+[1.293669] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl_Zone.Identifier\n'}
+[1.305562] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae\n'}
+[1.307292] (-) TimerEvent: {}
+[1.316531] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae_Zone.Identifier\n'}
+[1.329206] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae\n'}
+[1.352649] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae_Zone.Identifier\n'}
+[1.364348] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae\n'}
+[1.377163] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae_Zone.Identifier\n'}
+[1.379940] (send_num) StdoutLine: {'line': b'running egg_info\n'}
+[1.380136] (send_num) StdoutLine: {'line': b'writing send_num.egg-info/PKG-INFO\n'}
+[1.381580] (send_num) StdoutLine: {'line': b'writing dependency_links to send_num.egg-info/dependency_links.txt\n'}
+[1.381799] (send_num) StdoutLine: {'line': b'writing entry points to send_num.egg-info/entry_points.txt\n'}
+[1.384804] (trac_ik_lib) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.385009] (trac_ik_lib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.385123] (send_num) StdoutLine: {'line': b'writing requirements to send_num.egg-info/requires.txt\n'}
+[1.385199] (send_num) StdoutLine: {'line': b'writing top-level names to send_num.egg-info/top_level.txt\n'}
+[1.391414] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger.dae\n'}
+[1.393078] (send_num) StdoutLine: {'line': b"reading manifest file 'send_num.egg-info/SOURCES.txt'\n"}
+[1.394053] (send_num) StdoutLine: {'line': b"writing manifest file 'send_num.egg-info/SOURCES.txt'\n"}
+[1.395826] (send_num) StdoutLine: {'line': b'running build_ext\n'}
+[1.396814] (send_num) StdoutLine: {'line': b'Creating /youbot/install/send_num/lib/python3.10/site-packages/send-num.egg-link (link to .)\n'}
+[1.397490] (send_num) StdoutLine: {'line': b'Installing bridge script to /youbot/install/send_num/lib/send_num\n'}
+[1.397893] (send_num) StdoutLine: {'line': b'Installing camera_server script to /youbot/install/send_num/lib/send_num\n'}
+[1.398371] (send_num) StdoutLine: {'line': b'Installing on_youbot script to /youbot/install/send_num/lib/send_num\n'}
+[1.398512] (send_num) StdoutLine: {'line': b'Installing send script to /youbot/install/send_num/lib/send_num\n'}
+[1.398951] (send_num) StdoutLine: {'line': b'Installing test_bridge script to /youbot/install/send_num/lib/send_num\n'}
+[1.399082] (send_num) StdoutLine: {'line': b'Installing test_server_copy script to /youbot/install/send_num/lib/send_num\n'}
+[1.399572] (send_num) StdoutLine: {'line': b'\n'}
+[1.399665] (send_num) StdoutLine: {'line': b'Installed /youbot/build/send_num\n'}
+[1.399973] (send_num) StdoutLine: {'line': b'running symlink_data\n'}
+[1.400100] (send_num) StdoutLine: {'line': b'symbolically linking /youbot/build/send_num/resource/send_num -> /youbot/install/send_num/share/ament_index/resource_index/packages\n'}
+[1.401795] (send_num) StdoutLine: {'line': b'symbolically linking /youbot/build/send_num/package.xml -> /youbot/install/send_num/share/send_num\n'}
+[1.404357] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger_convex.dae\n'}
+[1.407389] (-) TimerEvent: {}
+[1.425948] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm.dae\n'}
+[1.438033] (send_num) CommandEnded: {'returncode': 0}
+[1.439459] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm_convex.dae\n'}
+[1.451562] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.dae\n'}
+[1.460072] (send_num) JobEnded: {'identifier': 'send_num', 'rc': 0}
+[1.464572] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.stl\n'}
+[1.479879] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate_convex.dae\n'}
+[1.491550] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/config/rviz.rviz\n'}
+[1.502982] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/config/youbot.yaml\n'}
+[1.507508] (-) TimerEvent: {}
+[1.515692] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts/youbot.material\n'}
+[1.534824] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0.dae\n'}
+[1.536117] (trac_ik_lib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.538188] (trac_ik_lib) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.545210] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0_convex.stl\n'}
+[1.559812] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1.dae\n'}
+[1.568296] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1_convex.stl\n'}
+[1.584844] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2.dae\n'}
+[1.598565] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2_convex.stl\n'}
+[1.607688] (-) TimerEvent: {}
+[1.613557] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3.dae\n'}
+[1.626008] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3_convex.stl\n'}
+[1.640447] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4.dae\n'}
+[1.655799] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4_convex.stl\n'}
+[1.669283] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5.dae\n'}
+[1.682295] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5_convex.stl\n'}
+[1.697351] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-left_wheel.dae\n'}
+[1.705950] (trac_ik_lib) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[1.707843] (-) TimerEvent: {}
+[1.711861] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-right_wheel.dae\n'}
+[1.723242] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base.dae\n'}
+[1.735685] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base_convex.stl\n'}
+[1.748090] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-left_wheel.dae\n'}
+[1.760342] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-right_wheel.dae\n'}
+[1.773961] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger.stl\n'}
+[1.786522] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger_convex.stl\n'}
+[1.807039] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm.stl\n'}
+[1.807915] (-) TimerEvent: {}
+[1.818797] (trac_ik_lib) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.829670] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm_convex.stl\n'}
+[1.850895] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate.dae\n'}
+[1.860250] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate_convex.stl\n'}
+[1.872368] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.config\n'}
+[1.890079] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.sdf\n'}
+[1.908019] (-) TimerEvent: {}
+[1.911955] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/ament_index/resource_index/package_run_dependencies/youbot_description\n'}
+[1.926292] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/ament_index/resource_index/parent_prefix_path/youbot_description\n'}
+[1.937651] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.sh\n'}
+[1.957809] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.dsv\n'}
+[1.967096] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/environment/path.sh\n'}
+[1.996303] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/environment/path.dsv\n'}
+[2.007536] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/local_setup.bash\n'}
+[2.008090] (-) TimerEvent: {}
+[2.017972] (trac_ik_lib) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.019639] (trac_ik_lib) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.019818] (trac_ik_lib) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.022483] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/local_setup.sh\n'}
+[2.024920] (trac_ik_lib) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.028858] (trac_ik_lib) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.033476] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/local_setup.zsh\n'}
+[2.034099] (trac_ik_lib) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.045151] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/local_setup.dsv\n'}
+[2.059278] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/package.dsv\n'}
+[2.067175] (trac_ik_lib) StdoutLine: {'line': b'-- Generating done\n'}
+[2.070788] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/ament_index/resource_index/packages/youbot_description\n'}
+[2.074389] (trac_ik_lib) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/trac_ik_lib\n'}
+[2.095806] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig.cmake\n'}
+[2.110740] (trac_ik_lib) CommandEnded: {'returncode': 0}
+[2.111420] (-) TimerEvent: {}
+[2.112004] (trac_ik_lib) JobProgress: {'identifier': 'trac_ik_lib', 'progress': 'build'}
+[2.112073] (trac_ik_lib) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/trac_ik_lib', '--', '-j4', '-l4'], 'cwd': '/youbot/build/trac_ik_lib', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_lib'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[2.117858] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig-version.cmake\n'}
+[2.133917] (youbot_description) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_description/share/youbot_description/package.xml\n'}
+[2.149491] (youbot_description) CommandEnded: {'returncode': 0}
+[2.180116] (youbot_description) JobEnded: {'identifier': 'youbot_description', 'rc': 0}
+[2.180619] (youbot_moveit) JobStarted: {'identifier': 'youbot_moveit'}
+[2.189518] (trac_ik_lib) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/trac_ik.cpp.o\x1b[0m\n'}
+[2.195009] (trac_ik_lib) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/kdl_tl.cpp.o\x1b[0m\n'}
+[2.195489] (trac_ik_lib) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/nlopt_ik.cpp.o\x1b[0m\n'}
+[2.199972] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'cmake'}
+[2.201655] (youbot_moveit) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/youbot_moveit', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_moveit'], 'cwd': '/youbot/build/youbot_moveit', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_description:/youbot/install/youbot_moveit:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[2.215814] (-) TimerEvent: {}
+[2.242113] (youbot_moveit) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.318807] (-) TimerEvent: {}
+[2.419076] (-) TimerEvent: {}
+[2.477409] (youbot_moveit) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.507832] (youbot_moveit) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.519174] (-) TimerEvent: {}
+[2.542782] (youbot_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.550839] (youbot_moveit) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.558839] (youbot_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.567830] (youbot_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.584572] (youbot_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.619268] (-) TimerEvent: {}
+[2.627794] (youbot_moveit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.628341] (youbot_moveit) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.719371] (-) TimerEvent: {}
+[2.812073] (youbot_moveit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.819471] (-) TimerEvent: {}
+[2.874257] (youbot_moveit) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[2.900548] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[2.919567] (-) TimerEvent: {}
+[3.019965] (-) TimerEvent: {}
+[3.120645] (-) TimerEvent: {}
+[3.220937] (-) TimerEvent: {}
+[3.278012] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[3.321039] (-) TimerEvent: {}
+[3.338387] (youbot_moveit) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[3.421142] (-) TimerEvent: {}
+[3.459721] (youbot_moveit) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[3.521241] (-) TimerEvent: {}
+[3.587080] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[3.621341] (-) TimerEvent: {}
+[3.689638] (youbot_moveit) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[3.721442] (-) TimerEvent: {}
+[3.745598] (youbot_moveit) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.821543] (-) TimerEvent: {}
+[3.923086] (-) TimerEvent: {}
+[4.023528] (-) TimerEvent: {}
+[4.107016] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[4.123676] (-) TimerEvent: {}
+[4.170145] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[4.220789] (youbot_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[4.224447] (-) TimerEvent: {}
+[4.302337] (youbot_moveit) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.324557] (-) TimerEvent: {}
+[4.347559] (youbot_moveit) StdoutLine: {'line': b'-- Found graph_msgs: 0.2.0 (/opt/ros/humble/share/graph_msgs/cmake)\n'}
+[4.424655] (-) TimerEvent: {}
+[4.525106] (-) TimerEvent: {}
+[4.615770] (youbot_moveit) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.625217] (-) TimerEvent: {}
+[4.725769] (-) TimerEvent: {}
+[4.767117] (youbot_moveit) StdoutLine: {'line': b'-- Generating done\n'}
+[4.788706] (youbot_moveit) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/youbot_moveit\n'}
+[4.806970] (youbot_moveit) CommandEnded: {'returncode': 0}
+[4.807712] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'build'}
+[4.807871] (youbot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/youbot_moveit', '--', '-j4', '-l4'], 'cwd': '/youbot/build/youbot_moveit', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_description:/youbot/install/youbot_moveit:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[4.825855] (-) TimerEvent: {}
+[4.926398] (-) TimerEvent: {}
+[4.943812] (youbot_moveit) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target script\x1b[0m\n'}
+[4.982559] (youbot_moveit) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable script\x1b[0m\n'}
+[5.027686] (-) TimerEvent: {}
+[5.128317] (-) TimerEvent: {}
+[5.229356] (-) TimerEvent: {}
+[5.330333] (-) TimerEvent: {}
+[5.431268] (-) TimerEvent: {}
+[5.532133] (-) TimerEvent: {}
+[5.635243] (-) TimerEvent: {}
+[5.735809] (-) TimerEvent: {}
+[5.836269] (-) TimerEvent: {}
+[5.937084] (-) TimerEvent: {}
+[6.038120] (-) TimerEvent: {}
+[6.138657] (-) TimerEvent: {}
+[6.239394] (-) TimerEvent: {}
+[6.342018] (-) TimerEvent: {}
+[6.368102] (youbot_moveit) StdoutLine: {'line': b'[100%] Built target script\n'}
+[6.385333] (youbot_moveit) CommandEnded: {'returncode': 0}
+[6.386918] (youbot_moveit) JobProgress: {'identifier': 'youbot_moveit', 'progress': 'install'}
+[6.390563] (youbot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/youbot_moveit'], 'cwd': '/youbot/build/youbot_moveit', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/youbot_moveit'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_description:/youbot/install/youbot_moveit:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[6.403652] (youbot_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.408733] (youbot_moveit) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.409367] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/ament_index/resource_index/package_run_dependencies/youbot_moveit\n'}
+[6.425238] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/ament_index/resource_index/parent_prefix_path/youbot_moveit\n'}
+[6.437663] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.sh\n'}
+[6.442116] (-) TimerEvent: {}
+[6.451705] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.dsv\n'}
+[6.464544] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.sh\n'}
+[6.477330] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.dsv\n'}
+[6.489432] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.bash\n'}
+[6.501718] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.sh\n'}
+[6.514195] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.zsh\n'}
+[6.542810] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.dsv\n'}
+[6.543003] (-) TimerEvent: {}
+[6.550807] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/package.dsv\n'}
+[6.562809] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/ament_index/resource_index/packages/youbot_moveit\n'}
+[6.573881] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig.cmake\n'}
+[6.584686] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig-version.cmake\n'}
+[6.596324] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/package.xml\n'}
+[6.608430] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/lib/youbot_moveit/script\n'}
+[6.620216] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/demo.launch.py\n'}
+[6.634049] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/move_group.launch.py\n'}
+[6.643146] (-) TimerEvent: {}
+[6.643690] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/moveit_rviz.launch.py\n'}
+[6.655936] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/rsp.launch.py\n'}
+[6.668120] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/setup_assistant.launch.py\n'}
+[6.683807] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/spawn_controllers.launch.py\n'}
+[6.694371] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/static_virtual_joint_tfs.launch.py\n'}
+[6.705891] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/launch/warehouse_db.launch.py\n'}
+[6.718213] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/initial_positions.yaml\n'}
+[6.731855] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/joint_limits.yaml\n'}
+[6.741622] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/kinematics.yaml\n'}
+[6.743232] (-) TimerEvent: {}
+[6.758808] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit.rviz\n'}
+[6.767827] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit_controllers.yaml\n'}
+[6.789076] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/ompl_planning.yaml\n'}
+[6.801033] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/pilz_cartesian_limits.yaml\n'}
+[6.812603] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/ros2_controllers.yaml\n'}
+[6.824323] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.ros2_control.xacro\n'}
+[6.835915] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.srdf\n'}
+[6.843335] (-) TimerEvent: {}
+[6.848532] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.urdf.xacro\n'}
+[6.860209] (youbot_moveit) StdoutLine: {'line': b'-- Symlinking: /youbot/install/youbot_moveit/share/youbot_moveit/.setup_assistant\n'}
+[6.876708] (youbot_moveit) CommandEnded: {'returncode': 0}
+[6.900455] (youbot_moveit) JobEnded: {'identifier': 'youbot_moveit', 'rc': 0}
+[6.943490] (-) TimerEvent: {}
+[7.043963] (-) TimerEvent: {}
+[7.144244] (-) TimerEvent: {}
+[7.245868] (-) TimerEvent: {}
+[7.346267] (-) TimerEvent: {}
+[7.446586] (-) TimerEvent: {}
+[7.546902] (-) TimerEvent: {}
+[7.649820] (-) TimerEvent: {}
+[7.750288] (-) TimerEvent: {}
+[7.850814] (-) TimerEvent: {}
+[7.951704] (-) TimerEvent: {}
+[8.060870] (-) TimerEvent: {}
+[8.161540] (-) TimerEvent: {}
+[8.264812] (-) TimerEvent: {}
+[8.365126] (-) TimerEvent: {}
+[8.471810] (-) TimerEvent: {}
+[8.572549] (-) TimerEvent: {}
+[8.673457] (-) TimerEvent: {}
+[8.773918] (-) TimerEvent: {}
+[8.875235] (-) TimerEvent: {}
+[8.977860] (-) TimerEvent: {}
+[9.078141] (-) TimerEvent: {}
+[9.178997] (-) TimerEvent: {}
+[9.279279] (-) TimerEvent: {}
+[9.379863] (-) TimerEvent: {}
+[9.481049] (-) TimerEvent: {}
+[9.581341] (-) TimerEvent: {}
+[9.682332] (-) TimerEvent: {}
+[9.783248] (-) TimerEvent: {}
+[9.883795] (-) TimerEvent: {}
+[9.985024] (-) TimerEvent: {}
+[10.086251] (-) TimerEvent: {}
+[10.187056] (-) TimerEvent: {}
+[10.289861] (-) TimerEvent: {}
+[10.393056] (-) TimerEvent: {}
+[10.493898] (-) TimerEvent: {}
+[10.594786] (-) TimerEvent: {}
+[10.695081] (-) TimerEvent: {}
+[10.795558] (-) TimerEvent: {}
+[10.896522] (-) TimerEvent: {}
+[10.997101] (-) TimerEvent: {}
+[11.097818] (-) TimerEvent: {}
+[11.198154] (-) TimerEvent: {}
+[11.299083] (-) TimerEvent: {}
+[11.399724] (-) TimerEvent: {}
+[11.500157] (-) TimerEvent: {}
+[11.600500] (-) TimerEvent: {}
+[11.701144] (-) TimerEvent: {}
+[11.801428] (-) TimerEvent: {}
+[11.901737] (-) TimerEvent: {}
+[12.002257] (-) TimerEvent: {}
+[12.102833] (-) TimerEvent: {}
+[12.204163] (-) TimerEvent: {}
+[12.304432] (-) TimerEvent: {}
+[12.404736] (-) TimerEvent: {}
+[12.505051] (-) TimerEvent: {}
+[12.605341] (-) TimerEvent: {}
+[12.706396] (-) TimerEvent: {}
+[12.811237] (-) TimerEvent: {}
+[12.911758] (-) TimerEvent: {}
+[13.012382] (-) TimerEvent: {}
+[13.112851] (-) TimerEvent: {}
+[13.213913] (-) TimerEvent: {}
+[13.315725] (-) TimerEvent: {}
+[13.416021] (-) TimerEvent: {}
+[13.516724] (-) TimerEvent: {}
+[13.618992] (-) TimerEvent: {}
+[13.719659] (-) TimerEvent: {}
+[13.821111] (-) TimerEvent: {}
+[13.922016] (-) TimerEvent: {}
+[14.022433] (-) TimerEvent: {}
+[14.124812] (-) TimerEvent: {}
+[14.225378] (-) TimerEvent: {}
+[14.327995] (-) TimerEvent: {}
+[14.428418] (-) TimerEvent: {}
+[14.529266] (-) TimerEvent: {}
+[14.629536] (-) TimerEvent: {}
+[14.729900] (-) TimerEvent: {}
+[14.830198] (-) TimerEvent: {}
+[14.930489] (-) TimerEvent: {}
+[15.030972] (-) TimerEvent: {}
+[15.131603] (-) TimerEvent: {}
+[15.232468] (-) TimerEvent: {}
+[15.332828] (-) TimerEvent: {}
+[15.433155] (-) TimerEvent: {}
+[15.502337] (trac_ik_lib) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libtrac_ik_lib.so\x1b[0m\n'}
+[15.533283] (-) TimerEvent: {}
+[15.634385] (-) TimerEvent: {}
+[15.734723] (-) TimerEvent: {}
+[15.835121] (-) TimerEvent: {}
+[15.926181] (trac_ik_lib) StdoutLine: {'line': b'[100%] Built target trac_ik_lib\n'}
+[15.935226] (-) TimerEvent: {}
+[15.953017] (trac_ik_lib) CommandEnded: {'returncode': 0}
+[15.953601] (trac_ik_lib) JobProgress: {'identifier': 'trac_ik_lib', 'progress': 'install'}
+[15.953634] (trac_ik_lib) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/trac_ik_lib'], 'cwd': '/youbot/build/trac_ik_lib', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_lib'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[15.961565] (trac_ik_lib) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.963262] (trac_ik_lib) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.964429] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/library_path.sh\n'}
+[15.983257] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/library_path.dsv\n'}
+[15.995848] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/dual_quaternion.h\n'}
+[16.007581] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/kdl_tl.hpp\n'}
+[16.019838] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/math3d.h\n'}
+[16.031147] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/nlopt_ik.hpp\n'}
+[16.035323] (-) TimerEvent: {}
+[16.047435] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/trac_ik.hpp\n'}
+[16.059515] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/include/trac_ik/visibility_control.hpp\n'}
+[16.072252] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/ament_index/resource_index/package_run_dependencies/trac_ik_lib\n'}
+[16.084974] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/ament_index/resource_index/parent_prefix_path/trac_ik_lib\n'}
+[16.098383] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/ament_prefix_path.sh\n'}
+[16.121700] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/ament_prefix_path.dsv\n'}
+[16.135427] (-) TimerEvent: {}
+[16.141153] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/path.sh\n'}
+[16.159410] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/environment/path.dsv\n'}
+[16.178616] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/local_setup.bash\n'}
+[16.190624] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/local_setup.sh\n'}
+[16.204564] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/local_setup.zsh\n'}
+[16.215993] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/local_setup.dsv\n'}
+[16.227886] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/package.dsv\n'}
+[16.235811] (-) TimerEvent: {}
+[16.242634] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/ament_index/resource_index/packages/trac_ik_lib\n'}
+[16.253398] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.269174] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.279575] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/trac_ik_libConfig.cmake\n'}
+[16.295430] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/trac_ik_libConfig-version.cmake\n'}
+[16.307593] (trac_ik_lib) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_lib/share/trac_ik_lib/package.xml\n'}
+[16.318156] (trac_ik_lib) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_lib/lib/libtrac_ik_lib.so\n'}
+[16.325917] (trac_ik_lib) StdoutLine: {'line': b'-- Set runtime path of "/youbot/install/trac_ik_lib/lib/libtrac_ik_lib.so" to ""\n'}
+[16.326099] (trac_ik_lib) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/export_trac_ik_libExport.cmake\n'}
+[16.326170] (trac_ik_lib) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/export_trac_ik_libExport-noconfig.cmake\n'}
+[16.327657] (trac_ik_lib) CommandEnded: {'returncode': 0}
+[16.339490] (-) TimerEvent: {}
+[16.357322] (trac_ik_lib) JobEnded: {'identifier': 'trac_ik_lib', 'rc': 0}
+[16.358299] (trac_ik_examples) JobStarted: {'identifier': 'trac_ik_examples'}
+[16.364371] (trac_ik_kinematics) JobStarted: {'identifier': 'trac_ik_kinematics'}
+[16.374869] (trac_ik_examples) JobProgress: {'identifier': 'trac_ik_examples', 'progress': 'cmake'}
+[16.374930] (trac_ik_examples) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/trac_ik/trac_ik_examples', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_examples'], 'cwd': '/youbot/build/trac_ik_examples', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_examples'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[16.380786] (trac_ik_kinematics) JobProgress: {'identifier': 'trac_ik_kinematics', 'progress': 'cmake'}
+[16.381958] (trac_ik_kinematics) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/trac_ik/trac_ik_kinematics', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik_kinematics'], 'cwd': '/youbot/build/trac_ik_kinematics', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_kinematics'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[16.438827] (-) TimerEvent: {}
+[16.479056] (trac_ik_kinematics) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[16.482131] (trac_ik_examples) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[16.539241] (-) TimerEvent: {}
+[16.559049] (trac_ik_kinematics) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[16.567396] (trac_ik_examples) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[16.568244] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[16.580001] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[16.640884] (-) TimerEvent: {}
+[16.689914] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.695493] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[16.699492] (trac_ik_kinematics) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[16.700525] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.705117] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.706098] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.709965] (trac_ik_examples) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[16.710998] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[16.711089] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[16.723001] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[16.741845] (-) TimerEvent: {}
+[16.827509] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[16.839341] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[16.841932] (-) TimerEvent: {}
+[16.846655] (trac_ik_kinematics) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[16.846957] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[16.847463] (trac_ik_kinematics) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[16.853979] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[16.854138] (trac_ik_examples) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[16.854279] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[16.856585] (trac_ik_examples) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[16.858577] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[16.860138] (trac_ik_examples) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[16.942793] (-) TimerEvent: {}
+[17.045173] (-) TimerEvent: {}
+[17.100757] (trac_ik_examples) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[17.106873] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[17.145263] (-) TimerEvent: {}
+[17.185855] (trac_ik_examples) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[17.186978] (trac_ik_kinematics) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[17.246307] (-) TimerEvent: {}
+[17.297509] (trac_ik_examples) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[17.348140] (-) TimerEvent: {}
+[17.370344] (trac_ik_kinematics) StderrLine: {'line': b"\x1b[0mtrac_ik_kinematics: You did not request a specific build type: Choosing 'Release' for maximum performance\x1b[0m\n"}
+[17.403475] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found tf2_kdl: 0.25.12 (/opt/ros/humble/share/tf2_kdl/cmake)\n'}
+[17.410709] (trac_ik_examples) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[17.421216] (trac_ik_examples) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[17.444824] (trac_ik_examples) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[17.448246] (-) TimerEvent: {}
+[17.465499] (trac_ik_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.481882] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[17.496856] (trac_ik_examples) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.500651] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[17.523066] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[17.545477] (trac_ik_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.548355] (-) TimerEvent: {}
+[17.574426] (trac_ik_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.579815] (trac_ik_examples) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[17.585641] (trac_ik_examples) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[17.645207] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[17.646870] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[17.647453] (trac_ik_kinematics) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[17.648424] (-) TimerEvent: {}
+[17.742056] (trac_ik_examples) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[17.748532] (-) TimerEvent: {}
+[17.790979] (trac_ik_examples) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[17.805908] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[17.814929] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[17.848627] (-) TimerEvent: {}
+[17.870065] (trac_ik_examples) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.889385] (trac_ik_examples) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[17.948852] (-) TimerEvent: {}
+[17.962496] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[18.008604] (trac_ik_examples) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[18.012970] (trac_ik_examples) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[18.042006] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[18.048951] (-) TimerEvent: {}
+[18.128710] (trac_ik_kinematics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[18.133866] (trac_ik_examples) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[18.134802] (trac_ik_examples) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[18.149115] (-) TimerEvent: {}
+[18.154462] (trac_ik_kinematics) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[18.237092] (trac_ik_examples) StdoutLine: {'line': b'-- Found trac_ik_lib: 0.1.0 (/youbot/install/trac_ik_lib/share/trac_ik_lib/cmake)\n'}
+[18.249240] (-) TimerEvent: {}
+[18.259845] (trac_ik_examples) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[18.260124] (trac_ik_examples) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[18.260216] (trac_ik_examples) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[18.343169] (trac_ik_kinematics) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[18.343530] (trac_ik_kinematics) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[18.349458] (-) TimerEvent: {}
+[18.352802] (trac_ik_examples) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[18.450370] (-) TimerEvent: {}
+[18.512200] (trac_ik_kinematics) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[18.518037] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[18.533347] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[18.535664] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.536189] (trac_ik_examples) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[18.536379] (trac_ik_examples) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.538028] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[18.538586] (trac_ik_examples) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[18.540994] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[18.541230] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.542088] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[18.543726] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.543959] (trac_ik_examples) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.545450] (trac_ik_examples) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.548368] (trac_ik_examples) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.550477] (-) TimerEvent: {}
+[18.565044] (trac_ik_examples) StdoutLine: {'line': b'-- Generating done\n'}
+[18.576634] (trac_ik_examples) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/trac_ik_examples\n'}
+[18.587880] (trac_ik_examples) CommandEnded: {'returncode': 0}
+[18.591828] (trac_ik_examples) JobProgress: {'identifier': 'trac_ik_examples', 'progress': 'build'}
+[18.592305] (trac_ik_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/trac_ik_examples', '--', '-j4', '-l4'], 'cwd': '/youbot/build/trac_ik_examples', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_examples'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[18.650575] (-) TimerEvent: {}
+[18.672353] (trac_ik_examples) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ik_tests.dir/src/ik_tests.cpp.o\x1b[0m\n'}
+[18.708872] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[18.714748] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found random_numbers: 2.0.1 (/opt/ros/humble/share/random_numbers/cmake)\n'}
+[18.737646] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[18.757818] (-) TimerEvent: {}
+[18.768976] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[18.835882] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[18.857959] (-) TimerEvent: {}
+[18.893119] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[18.958032] (-) TimerEvent: {}
+[18.958812] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[19.000838] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[19.058872] (-) TimerEvent: {}
+[19.157547] (trac_ik_kinematics) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[19.158941] (-) TimerEvent: {}
+[19.264811] (-) TimerEvent: {}
+[19.365117] (-) TimerEvent: {}
+[19.465620] (-) TimerEvent: {}
+[19.532157] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[19.539319] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[19.565720] (-) TimerEvent: {}
+[19.578718] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found trac_ik_lib: 0.1.0 (/youbot/install/trac_ik_lib/share/trac_ik_lib/cmake)\n'}
+[19.597885] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system \n'}
+[19.611271] (trac_ik_kinematics) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[19.622794] (trac_ik_kinematics) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.665832] (-) TimerEvent: {}
+[19.669801] (trac_ik_kinematics) StdoutLine: {'line': b'-- Generating done\n'}
+[19.682806] (trac_ik_kinematics) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/trac_ik_kinematics\n'}
+[19.702329] (trac_ik_kinematics) CommandEnded: {'returncode': 0}
+[19.702989] (trac_ik_kinematics) JobProgress: {'identifier': 'trac_ik_kinematics', 'progress': 'build'}
+[19.703368] (trac_ik_kinematics) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/trac_ik_kinematics', '--', '-j4', '-l4'], 'cwd': '/youbot/build/trac_ik_kinematics', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_kinematics'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[19.765950] (-) TimerEvent: {}
+[19.787294] (trac_ik_kinematics) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object trac_ik_kinematics_plugin/CMakeFiles/moveit_trac_ik_kinematics_plugin.dir/src/trac_ik_kinematics_plugin.cpp.o\x1b[0m\n'}
+[19.867699] (-) TimerEvent: {}
+[19.967992] (-) TimerEvent: {}
+[20.068427] (-) TimerEvent: {}
+[20.168837] (-) TimerEvent: {}
+[20.269270] (-) TimerEvent: {}
+[20.369550] (-) TimerEvent: {}
+[20.478919] (-) TimerEvent: {}
+[20.579194] (-) TimerEvent: {}
+[20.679624] (-) TimerEvent: {}
+[20.780110] (-) TimerEvent: {}
+[20.884042] (-) TimerEvent: {}
+[20.984605] (-) TimerEvent: {}
+[21.085206] (-) TimerEvent: {}
+[21.186716] (-) TimerEvent: {}
+[21.287021] (-) TimerEvent: {}
+[21.388482] (-) TimerEvent: {}
+[21.490056] (-) TimerEvent: {}
+[21.593808] (-) TimerEvent: {}
+[21.694106] (-) TimerEvent: {}
+[21.794410] (-) TimerEvent: {}
+[21.894711] (-) TimerEvent: {}
+[21.995130] (-) TimerEvent: {}
+[22.095571] (-) TimerEvent: {}
+[22.196046] (-) TimerEvent: {}
+[22.296709] (-) TimerEvent: {}
+[22.397205] (-) TimerEvent: {}
+[22.497630] (-) TimerEvent: {}
+[22.598060] (-) TimerEvent: {}
+[22.698583] (-) TimerEvent: {}
+[22.799882] (-) TimerEvent: {}
+[22.905004] (-) TimerEvent: {}
+[23.006443] (-) TimerEvent: {}
+[23.106734] (-) TimerEvent: {}
+[23.207127] (-) TimerEvent: {}
+[23.311808] (-) TimerEvent: {}
+[23.412584] (-) TimerEvent: {}
+[23.512910] (-) TimerEvent: {}
+[23.613474] (-) TimerEvent: {}
+[23.714535] (-) TimerEvent: {}
+[23.815469] (-) TimerEvent: {}
+[23.917297] (-) TimerEvent: {}
+[24.017942] (-) TimerEvent: {}
+[24.118689] (-) TimerEvent: {}
+[24.222159] (-) TimerEvent: {}
+[24.322544] (-) TimerEvent: {}
+[24.422815] (-) TimerEvent: {}
+[24.523125] (-) TimerEvent: {}
+[24.547498] (trac_ik_examples) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik_tests\x1b[0m\n'}
+[24.624904] (-) TimerEvent: {}
+[24.728025] (-) TimerEvent: {}
+[24.786894] (trac_ik_examples) StdoutLine: {'line': b'[100%] Built target ik_tests\n'}
+[24.806757] (trac_ik_examples) CommandEnded: {'returncode': 0}
+[24.807971] (trac_ik_examples) JobProgress: {'identifier': 'trac_ik_examples', 'progress': 'install'}
+[24.809957] (trac_ik_examples) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/trac_ik_examples'], 'cwd': '/youbot/build/trac_ik_examples', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_examples'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[24.820151] (trac_ik_examples) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.821226] (trac_ik_examples) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.822977] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/lib/trac_ik_examples/ik_tests\n'}
+[24.833353] (-) TimerEvent: {}
+[24.850212] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/launch/pr2.urdf\n'}
+[24.878389] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/launch/pr2_arm.launch.py\n'}
+[24.891548] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/package_run_dependencies/trac_ik_examples\n'}
+[24.905102] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/parent_prefix_path/trac_ik_examples\n'}
+[24.923644] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/ament_prefix_path.sh\n'}
+[24.932723] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/ament_prefix_path.dsv\n'}
+[24.933440] (-) TimerEvent: {}
+[24.946722] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/path.sh\n'}
+[24.956551] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/environment/path.dsv\n'}
+[24.967616] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.bash\n'}
+[24.978956] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.sh\n'}
+[24.991164] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.zsh\n'}
+[25.001723] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/local_setup.dsv\n'}
+[25.013242] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/package.dsv\n'}
+[25.024912] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/ament_index/resource_index/packages/trac_ik_examples\n'}
+[25.034031] (-) TimerEvent: {}
+[25.038027] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/cmake/trac_ik_examplesConfig.cmake\n'}
+[25.047725] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/cmake/trac_ik_examplesConfig-version.cmake\n'}
+[25.059053] (trac_ik_examples) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_examples/share/trac_ik_examples/package.xml\n'}
+[25.075815] (trac_ik_examples) CommandEnded: {'returncode': 0}
+[25.095116] (trac_ik_examples) JobEnded: {'identifier': 'trac_ik_examples', 'rc': 0}
+[25.134085] (-) TimerEvent: {}
+[25.236802] (-) TimerEvent: {}
+[25.337236] (-) TimerEvent: {}
+[25.437690] (-) TimerEvent: {}
+[25.538114] (-) TimerEvent: {}
+[25.638407] (-) TimerEvent: {}
+[25.709564] (trac_ik_kinematics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[25.709778] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[25.709860] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[25.709946] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[25.711321] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[25.711778] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[25.711869] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[25.711931] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[25.711989] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.712048] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.712104] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.712160] (trac_ik_kinematics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:32\x1b[m\x1b[K:\n'}
+[25.712217] (trac_ik_kinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool trac_ik_kinematics_plugin::TRAC_IKKinematicsPlugin::searchPositionIK(const Pose&, const std::vector<double, std::allocator<double> >&, double, std::vector<double, std::allocator<double> >&, const IKCallbackFn&, moveit_msgs::msg::MoveItErrorCodes&, const std::vector<double, std::allocator<double> >&, const kinematics::KinematicsQueryOptions&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.712280] (trac_ik_kinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:397:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%i\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kmoveit_msgs::msg::MoveItErrorCodes\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kmoveit_msgs::msg::MoveItErrorCodes_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[25.712352] (trac_ik_kinematics) StderrLine: {'line': b'  397 |         RCLCPP_DEBUG(LOGGER, \x1b[01;35m\x1b[K"Solution has error code %i"\x1b[m\x1b[K, \x1b[32m\x1b[Kerror_code\x1b[m\x1b[K);\n'}
+[25.712410] (trac_ik_kinematics) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.712471] (trac_ik_kinematics) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[25.712528] (trac_ik_kinematics) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[Kmoveit_msgs::msg::MoveItErrorCodes {aka moveit_msgs::msg::MoveItErrorCodes_<std::allocator<void> >}\x1b[m\x1b[K\n'}
+[25.712585] (trac_ik_kinematics) StderrLine: {'line': b'\n'}
+[25.712641] (trac_ik_kinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:397:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[25.712699] (trac_ik_kinematics) StderrLine: {'line': b'  397 | R, "Solution has error code \x1b[01;36m\x1b[K%i\x1b[m\x1b[K", error_code);\n'}
+[25.712777] (trac_ik_kinematics) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[25.712855] (trac_ik_kinematics) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[25.712911] (trac_ik_kinematics) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[25.712967] (trac_ik_kinematics) StderrLine: {'line': b'\n'}
+[25.713023] (trac_ik_kinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:320:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kconsistency_limits\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.713082] (trac_ik_kinematics) StderrLine: {'line': b'  320 |   \x1b[01;35m\x1b[Kconst std::vector<double> &consistency_limits\x1b[m\x1b[K,\n'}
+[25.713139] (trac_ik_kinematics) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.713195] (trac_ik_kinematics) StderrLine: {'line': b'\n'}
+[25.713251] (trac_ik_kinematics) StderrLine: {'line': b'\x1b[01m\x1b[K/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/src/trac_ik_kinematics_plugin.cpp:321:92:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Koptions\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[25.713310] (trac_ik_kinematics) StderrLine: {'line': b'  321 | \x1b[01;35m\x1b[Kics::KinematicsQueryOptions &options\x1b[m\x1b[K) const\n'}
+[25.713381] (trac_ik_kinematics) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.721521] (trac_ik_kinematics) StderrLine: {'line': b'\n'}
+[25.738535] (-) TimerEvent: {}
+[25.839020] (-) TimerEvent: {}
+[25.940391] (-) TimerEvent: {}
+[26.041011] (-) TimerEvent: {}
+[26.141811] (-) TimerEvent: {}
+[26.242510] (-) TimerEvent: {}
+[26.342991] (-) TimerEvent: {}
+[26.443454] (-) TimerEvent: {}
+[26.543864] (-) TimerEvent: {}
+[26.647049] (-) TimerEvent: {}
+[26.747358] (-) TimerEvent: {}
+[26.849665] (-) TimerEvent: {}
+[26.950330] (-) TimerEvent: {}
+[27.051501] (-) TimerEvent: {}
+[27.152019] (-) TimerEvent: {}
+[27.257806] (-) TimerEvent: {}
+[27.358197] (-) TimerEvent: {}
+[27.459021] (-) TimerEvent: {}
+[27.559675] (-) TimerEvent: {}
+[27.661022] (-) TimerEvent: {}
+[27.761561] (-) TimerEvent: {}
+[27.861827] (-) TimerEvent: {}
+[27.962264] (-) TimerEvent: {}
+[28.063160] (-) TimerEvent: {}
+[28.163611] (-) TimerEvent: {}
+[28.264517] (-) TimerEvent: {}
+[28.365411] (-) TimerEvent: {}
+[28.466264] (-) TimerEvent: {}
+[28.567320] (-) TimerEvent: {}
+[28.667817] (-) TimerEvent: {}
+[28.768142] (-) TimerEvent: {}
+[28.868535] (-) TimerEvent: {}
+[28.968840] (-) TimerEvent: {}
+[29.019140] (trac_ik_kinematics) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmoveit_trac_ik_kinematics_plugin.so\x1b[0m\n'}
+[29.068971] (-) TimerEvent: {}
+[29.169274] (-) TimerEvent: {}
+[29.269690] (-) TimerEvent: {}
+[29.341707] (trac_ik_kinematics) StdoutLine: {'line': b'[100%] Built target moveit_trac_ik_kinematics_plugin\n'}
+[29.363105] (trac_ik_kinematics) CommandEnded: {'returncode': 0}
+[29.363428] (trac_ik_kinematics) JobProgress: {'identifier': 'trac_ik_kinematics', 'progress': 'install'}
+[29.363457] (trac_ik_kinematics) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/trac_ik_kinematics'], 'cwd': '/youbot/build/trac_ik_kinematics', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik_kinematics'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[29.369729] (trac_ik_kinematics) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[29.369905] (-) TimerEvent: {}
+[29.370329] (trac_ik_kinematics) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.370832] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics//trac_ik_kinematics_plugin_description.xml\n'}
+[29.381574] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/include/trac_ik_kinematics_plugin/trac_ik_kinematics_plugin.h\n'}
+[29.392045] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/library_path.sh\n'}
+[29.402709] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/library_path.dsv\n'}
+[29.415892] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/ament_index/resource_index/package_run_dependencies/trac_ik_kinematics\n'}
+[29.426706] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/ament_index/resource_index/parent_prefix_path/trac_ik_kinematics\n'}
+[29.436857] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/ament_prefix_path.sh\n'}
+[29.447972] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/ament_prefix_path.dsv\n'}
+[29.465806] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/path.sh\n'}
+[29.470008] (-) TimerEvent: {}
+[29.470848] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/environment/path.dsv\n'}
+[29.482007] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/local_setup.bash\n'}
+[29.492282] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/local_setup.sh\n'}
+[29.503243] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/local_setup.zsh\n'}
+[29.517846] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/local_setup.dsv\n'}
+[29.528529] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/package.dsv\n'}
+[29.538778] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/ament_index/resource_index/packages/trac_ik_kinematics\n'}
+[29.548909] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/ament_index/resource_index/moveit_core__pluginlib__plugin/trac_ik_kinematics\n'}
+[29.559134] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/ConfigExtras.cmake\n'}
+[29.570105] (-) TimerEvent: {}
+[29.572845] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[29.583440] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.594024] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/trac_ik_kinematicsConfig.cmake\n'}
+[29.604839] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/trac_ik_kinematicsConfig-version.cmake\n'}
+[29.614536] (trac_ik_kinematics) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/package.xml\n'}
+[29.627553] (trac_ik_kinematics) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_kinematics/lib/libmoveit_trac_ik_kinematics_plugin.so\n'}
+[29.627730] (trac_ik_kinematics) StdoutLine: {'line': b'-- Set runtime path of "/youbot/install/trac_ik_kinematics/lib/libmoveit_trac_ik_kinematics_plugin.so" to ""\n'}
+[29.627821] (trac_ik_kinematics) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/export_trac_ik_kinematicsExport.cmake\n'}
+[29.628402] (trac_ik_kinematics) StdoutLine: {'line': b'-- Installing: /youbot/install/trac_ik_kinematics/share/trac_ik_kinematics/cmake/export_trac_ik_kinematicsExport-release.cmake\n'}
+[29.630620] (trac_ik_kinematics) CommandEnded: {'returncode': 0}
+[29.649826] (trac_ik_kinematics) JobEnded: {'identifier': 'trac_ik_kinematics', 'rc': 0}
+[29.653451] (trac_ik) JobStarted: {'identifier': 'trac_ik'}
+[29.661591] (trac_ik) JobProgress: {'identifier': 'trac_ik', 'progress': 'cmake'}
+[29.662659] (trac_ik) Command: {'cmd': ['/usr/bin/cmake', '/youbot/src/trac_ik/trac_ik', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/youbot/install/trac_ik'], 'cwd': '/youbot/build/trac_ik', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_kinematics/lib:/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[29.670239] (-) TimerEvent: {}
+[29.733685] (trac_ik) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[29.770363] (-) TimerEvent: {}
+[29.800787] (trac_ik) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[29.811854] (trac_ik) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[29.870490] (-) TimerEvent: {}
+[29.896409] (trac_ik) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[29.904541] (trac_ik) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[29.905049] (trac_ik) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[29.905683] (trac_ik) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[29.909783] (trac_ik) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[29.970605] (-) TimerEvent: {}
+[30.028988] (trac_ik) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[30.035294] (trac_ik) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[30.036639] (trac_ik) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[30.038061] (trac_ik) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[30.041415] (trac_ik) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[30.070862] (-) TimerEvent: {}
+[30.172103] (-) TimerEvent: {}
+[30.227822] (trac_ik) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[30.272199] (-) TimerEvent: {}
+[30.304475] (trac_ik) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[30.372325] (-) TimerEvent: {}
+[30.455392] (trac_ik) StdoutLine: {'line': b'-- Configuring done\n'}
+[30.463861] (trac_ik) StdoutLine: {'line': b'-- Generating done\n'}
+[30.464263] (trac_ik) StdoutLine: {'line': b'-- Build files have been written to: /youbot/build/trac_ik\n'}
+[30.464909] (trac_ik) CommandEnded: {'returncode': 0}
+[30.466729] (trac_ik) JobProgress: {'identifier': 'trac_ik', 'progress': 'build'}
+[30.466898] (trac_ik) Command: {'cmd': ['/usr/bin/cmake', '--build', '/youbot/build/trac_ik', '--', '-j4', '-l4'], 'cwd': '/youbot/build/trac_ik', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_kinematics/lib:/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[30.472443] (-) TimerEvent: {}
+[30.514345] (trac_ik) CommandEnded: {'returncode': 0}
+[30.516220] (trac_ik) JobProgress: {'identifier': 'trac_ik', 'progress': 'install'}
+[30.516361] (trac_ik) Command: {'cmd': ['/usr/bin/cmake', '--install', '/youbot/build/trac_ik'], 'cwd': '/youbot/build/trac_ik', 'env': OrderedDict([('HOSTNAME', 'danil-H110M-S2PV'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/youbot/install/trac_ik_kinematics/lib:/youbot/install/trac_ik_lib/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/youbot/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '220'), ('AMENT_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble'), ('PWD', '/youbot/build/trac_ik'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/youbot/install/send_num/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/youbot/install/trac_ik_kinematics:/youbot/install/trac_ik_examples:/youbot/install/trac_ik_lib:/youbot/install/youbot_moveit:/youbot/install/youbot_description:/youbot/install/send_num:/opt/ros/humble')]), 'shell': False}
+[30.525035] (trac_ik) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.525521] (trac_ik) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.525971] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/ament_index/resource_index/package_run_dependencies/trac_ik\n'}
+[30.537238] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/ament_index/resource_index/parent_prefix_path/trac_ik\n'}
+[30.548078] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/environment/ament_prefix_path.sh\n'}
+[30.564808] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/environment/ament_prefix_path.dsv\n'}
+[30.569871] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/environment/path.sh\n'}
+[30.572941] (-) TimerEvent: {}
+[30.580377] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/environment/path.dsv\n'}
+[30.590804] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/local_setup.bash\n'}
+[30.602381] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/local_setup.sh\n'}
+[30.612574] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/local_setup.zsh\n'}
+[30.624979] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/local_setup.dsv\n'}
+[30.634842] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/package.dsv\n'}
+[30.645814] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/ament_index/resource_index/packages/trac_ik\n'}
+[30.656579] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/cmake/trac_ikConfig.cmake\n'}
+[30.667026] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/cmake/trac_ikConfig-version.cmake\n'}
+[30.673805] (-) TimerEvent: {}
+[30.680699] (trac_ik) StdoutLine: {'line': b'-- Symlinking: /youbot/install/trac_ik/share/trac_ik/package.xml\n'}
+[30.698703] (trac_ik) CommandEnded: {'returncode': 0}
+[30.712405] (trac_ik) JobEnded: {'identifier': 'trac_ik', 'rc': 0}
+[30.713327] (-) EventReactorShutdown: {}

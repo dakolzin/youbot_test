@@ -1,0 +1,1 @@
+/youbot/build/youbot_moveit/ament_cmake_core/youbot_moveitConfig-version.cmake

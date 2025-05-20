@@ -1,0 +1,142 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /youbot/build/youbot_description
+-- Install configuration: ""
+-- Installing: /youbot/install/youbot_description/share/youbot_description/launch
+-- Installing: /youbot/install/youbot_description/share/youbot_description/launch/rviz.launch.py
+-- Installing: /youbot/install/youbot_description/share/youbot_description/rviz
+-- Installing: /youbot/install/youbot_description/share/youbot_description/rviz/view.rviz
+-- Installing: /youbot/install/youbot_description/share/youbot_description/urdf
+-- Installing: /youbot/install/youbot_description/share/youbot_description/urdf/youbot.urdf
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.tga
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/microsoft_lifecam.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.png
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.png
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae_Zone.Identifier
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm_convex.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/config
+-- Installing: /youbot/install/youbot_description/share/youbot_description/config/youbot.yaml
+-- Installing: /youbot/install/youbot_description/share/youbot_description/config/rviz.rviz
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.config
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-left_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-right_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-right_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-left_wheel.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate.dae
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate_convex.stl
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts/youbot.material
+-- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.sdf
+-- Installing: /youbot/install/youbot_description/share/youbot_description/worlds
+-- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/package_run_dependencies/youbot_description
+-- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/parent_prefix_path/youbot_description
+-- Installing: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.sh
+-- Installing: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.dsv
+-- Installing: /youbot/install/youbot_description/share/youbot_description/environment/path.sh
+-- Installing: /youbot/install/youbot_description/share/youbot_description/environment/path.dsv
+-- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.bash
+-- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.sh
+-- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.zsh
+-- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.dsv
+-- Installing: /youbot/install/youbot_description/share/youbot_description/package.dsv
+-- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/packages/youbot_description
+-- Installing: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig.cmake
+-- Installing: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig-version.cmake
+-- Installing: /youbot/install/youbot_description/share/youbot_description/package.xml

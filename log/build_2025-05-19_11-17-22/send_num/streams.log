@@ -1,0 +1,24 @@
+[0.814s] Invoking command in '/youbot/build/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /youbot/build/send_num/build --no-deps symlink_data --force
+[1.170s] running develop
+[1.358s] running egg_info
+[1.358s] writing send_num.egg-info/PKG-INFO
+[1.359s] writing dependency_links to send_num.egg-info/dependency_links.txt
+[1.360s] writing entry points to send_num.egg-info/entry_points.txt
+[1.363s] writing requirements to send_num.egg-info/requires.txt
+[1.363s] writing top-level names to send_num.egg-info/top_level.txt
+[1.371s] reading manifest file 'send_num.egg-info/SOURCES.txt'
+[1.372s] writing manifest file 'send_num.egg-info/SOURCES.txt'
+[1.374s] running build_ext
+[1.375s] Creating /youbot/install/send_num/lib/python3.10/site-packages/send-num.egg-link (link to .)
+[1.375s] Installing bridge script to /youbot/install/send_num/lib/send_num
+[1.376s] Installing camera_server script to /youbot/install/send_num/lib/send_num
+[1.376s] Installing on_youbot script to /youbot/install/send_num/lib/send_num
+[1.376s] Installing send script to /youbot/install/send_num/lib/send_num
+[1.377s] Installing test_bridge script to /youbot/install/send_num/lib/send_num
+[1.377s] Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+[1.377s] 
+[1.377s] Installed /youbot/build/send_num
+[1.378s] running symlink_data
+[1.378s] symbolically linking /youbot/build/send_num/resource/send_num -> /youbot/install/send_num/share/ament_index/resource_index/packages
+[1.380s] symbolically linking /youbot/build/send_num/package.xml -> /youbot/install/send_num/share/send_num
+[1.417s] Invoked command in '/youbot/build/send_num' returned '0': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /youbot/build/send_num/build --no-deps symlink_data --force

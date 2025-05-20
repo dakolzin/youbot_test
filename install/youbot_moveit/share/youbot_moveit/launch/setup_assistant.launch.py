@@ -1,0 +1,1 @@
+/youbot/src/youbot_moveit/launch/setup_assistant.launch.py

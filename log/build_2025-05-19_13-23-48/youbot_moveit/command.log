@@ -1,0 +1,1 @@
+Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake /youbot/src/youbot_moveit -DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_moveit

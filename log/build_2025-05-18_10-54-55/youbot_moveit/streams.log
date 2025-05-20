@@ -1,0 +1,96 @@
+[0.011s] Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake /youbot/src/youbot_moveit -DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_moveit
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.137s] -- The CXX compiler identification is GNU 11.4.0
+[0.146s] -- Detecting C compiler ABI info
+[0.222s] -- Detecting C compiler ABI info - done
+[0.230s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.230s] -- Detecting C compile features
+[0.231s] -- Detecting C compile features - done
+[0.234s] -- Detecting CXX compiler ABI info
+[0.324s] -- Detecting CXX compiler ABI info - done
+[0.333s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.334s] -- Detecting CXX compile features
+[0.334s] -- Detecting CXX compile features - done
+[0.338s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.514s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.646s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.735s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.747s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.766s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.791s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.910s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.916s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.061s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.099s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.158s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.179s] -- Looking for pthread.h
+[1.274s] -- Looking for pthread.h - found
+[1.274s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.361s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.361s] -- Found Threads: TRUE  
+[1.570s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.624s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.919s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.994s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.017s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.023s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.069s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.194s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.249s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.499s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[2.546s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.582s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.630s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.664s] -- Found graph_msgs: 0.2.0 (/opt/ros/humble/share/graph_msgs/cmake)
+[2.763s] -- Configuring done
+[2.826s] -- Generating done
+[2.835s] -- Build files have been written to: /youbot/build/youbot_moveit
+[2.851s] Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake /youbot/src/youbot_moveit -DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_moveit
+[2.853s] Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[2.919s] [ 50%] [32mBuilding CXX object CMakeFiles/script.dir/scripts/script.cpp.o[0m
+[18.012s] [100%] [32m[1mLinking CXX executable script[0m
+[19.245s] [100%] Built target script
+[19.259s] Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[19.261s] Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit
+[19.270s] -- Install configuration: ""
+[19.270s] -- Installing: /youbot/install/youbot_moveit/share/ament_index/resource_index/package_run_dependencies/youbot_moveit
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/ament_index/resource_index/parent_prefix_path/youbot_moveit
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.sh
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.dsv
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.sh
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.dsv
+[19.271s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.bash
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.sh
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.zsh
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.dsv
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/package.dsv
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/ament_index/resource_index/packages/youbot_moveit
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig.cmake
+[19.272s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig-version.cmake
+[19.273s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/package.xml
+[19.273s] -- Installing: /youbot/install/youbot_moveit/lib/youbot_moveit/script
+[19.277s] -- Set runtime path of "/youbot/install/youbot_moveit/lib/youbot_moveit/script" to ""
+[19.277s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/warehouse_db.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/spawn_controllers.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/rsp.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/demo.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/moveit_rviz.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/move_group.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/setup_assistant.launch.py
+[19.278s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/launch/static_virtual_joint_tfs.launch.py
+[19.279s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config
+[19.279s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit.rviz
+[19.279s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.ros2_control.xacro
+[19.280s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/joint_limits.yaml
+[19.280s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.urdf.xacro
+[19.280s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit_controllers.yaml
+[19.281s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/kinematics.yaml
+[19.281s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/initial_positions.yaml
+[19.282s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/ros2_controllers.yaml
+[19.282s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.srdf
+[19.282s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/ompl_planning.yaml
+[19.283s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/config/pilz_cartesian_limits.yaml
+[19.283s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/.setup_assistant
+[19.286s] Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit

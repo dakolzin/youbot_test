@@ -1,0 +1,148 @@
+[0.027s] Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/youbot_description -DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_description
+[0.308s] -- The C compiler identification is GNU 11.4.0
+[0.445s] -- The CXX compiler identification is GNU 11.4.0
+[0.457s] -- Detecting C compiler ABI info
+[0.549s] -- Detecting C compiler ABI info - done
+[0.555s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.556s] -- Detecting C compile features
+[0.556s] -- Detecting C compile features - done
+[0.561s] -- Detecting CXX compiler ABI info
+[0.655s] -- Detecting CXX compiler ABI info - done
+[0.664s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.664s] -- Detecting CXX compile features
+[0.664s] -- Detecting CXX compile features - done
+[0.671s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.858s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.015s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.198s] -- Configuring done
+[1.200s] -- Generating done
+[1.202s] -- Build files have been written to: /youbot/build/youbot_description
+[1.209s] Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /youbot/src/youbot_description -DCMAKE_INSTALL_PREFIX=/youbot/install/youbot_description
+[1.211s] Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+[1.257s] Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+[1.270s] Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_description
+[1.278s] -- Install configuration: ""
+[1.278s] -- Installing: /youbot/install/youbot_description/share/youbot_description/launch
+[1.278s] -- Installing: /youbot/install/youbot_description/share/youbot_description/launch/rviz.launch.py
+[1.278s] -- Installing: /youbot/install/youbot_description/share/youbot_description/rviz
+[1.278s] -- Installing: /youbot/install/youbot_description/share/youbot_description/rviz/view.rviz
+[1.279s] -- Installing: /youbot/install/youbot_description/share/youbot_description/urdf
+[1.279s] -- Installing: /youbot/install/youbot_description/share/youbot_description/urdf/youbot.urdf
+[1.280s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes
+[1.280s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[1.280s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl
+[1.281s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl
+[1.282s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl
+[1.283s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.dae
+[1.283s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2.dae
+[1.285s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl_Zone.Identifier
+[1.286s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_3_convex.stl
+[1.287s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4_convex.dae
+[1.288s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.stl_Zone.Identifier
+[1.288s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm4.dae
+[1.290s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5.dae
+[1.291s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl_Zone.Identifier
+[1.291s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl
+[1.292s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0.dae
+[1.294s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3_convex.dae
+[1.295s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm5_convex.dae
+[1.296s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_5_convex.stl_Zone.Identifier
+[1.296s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1.dae
+[1.301s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_4_convex.stl
+[1.302s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_2_convex.stl_Zone.Identifier
+[1.302s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm0_convex.stl_Zone.Identifier
+[1.302s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm2_convex.dae
+[1.304s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm3.dae
+[1.307s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl
+[1.307s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm1_convex.dae
+[1.308s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_arm/arm_joint_1_convex.stl_Zone.Identifier
+[1.309s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors
+[1.309s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.tga
+[1.309s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo_convex.dae
+[1.310s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.dae
+[1.311s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/kinect.dae
+[1.314s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/hokuyo.dae
+[1.315s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.dae
+[1.317s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/microsoft_lifecam.dae
+[1.318s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_base.png
+[1.319s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/sensors/asus_xtion_pro_live_camera.png
+[1.319s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate
+[1.319s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate_convex.dae
+[1.320s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.dae
+[1.322s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_plate/plate.stl
+[1.325s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base
+[1.325s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl
+[1.326s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.stl_Zone.Identifier
+[1.326s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae_Zone.Identifier
+[1.326s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae
+[1.329s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base.dae
+[1.332s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae_Zone.Identifier
+[1.333s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-right_wheel.dae
+[1.335s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae_Zone.Identifier
+[1.335s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-right_wheel.dae
+[1.337s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/front-left_wheel.dae_Zone.Identifier
+[1.338s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_convex.dae
+[1.338s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/back-left_wheel.dae
+[1.341s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae_Zone.Identifier
+[1.341s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_base/base_frame.dae
+[1.343s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[1.343s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger.dae
+[1.344s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/finger_convex.dae
+[1.344s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm_convex.dae
+[1.345s] -- Installing: /youbot/install/youbot_description/share/youbot_description/meshes/youbot_gripper/palm.dae
+[1.347s] -- Installing: /youbot/install/youbot_description/share/youbot_description/config
+[1.347s] -- Installing: /youbot/install/youbot_description/share/youbot_description/config/youbot.yaml
+[1.348s] -- Installing: /youbot/install/youbot_description/share/youbot_description/config/rviz.rviz
+[1.348s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf
+[1.348s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot
+[1.348s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.config
+[1.349s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes
+[1.349s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper
+[1.349s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm.stl
+[1.350s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/palm_convex.stl
+[1.351s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger_convex.stl
+[1.352s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/gripper/finger.stl
+[1.352s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm
+[1.353s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2_convex.stl
+[1.354s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm2.dae
+[1.356s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3_convex.stl
+[1.357s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4.dae
+[1.359s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5.dae
+[1.360s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0_convex.stl
+[1.360s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1_convex.stl
+[1.361s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm0.dae
+[1.363s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm1.dae
+[1.368s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm4_convex.stl
+[1.369s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm3.dae
+[1.371s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/arm/arm5_convex.stl
+[1.372s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base
+[1.372s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base_convex.stl
+[1.372s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-left_wheel.dae
+[1.375s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/base.dae
+[1.379s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/front-right_wheel.dae
+[1.382s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-right_wheel.dae
+[1.384s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/base/back-left_wheel.dae
+[1.386s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate
+[1.386s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate.dae
+[1.387s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/meshes/plate/plate_convex.stl
+[1.388s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials
+[1.388s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts
+[1.388s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/materials/scripts/youbot.material
+[1.388s] -- Installing: /youbot/install/youbot_description/share/youbot_description/sdf/youbot/model.sdf
+[1.389s] -- Installing: /youbot/install/youbot_description/share/youbot_description/worlds
+[1.389s] -- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/package_run_dependencies/youbot_description
+[1.389s] -- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/parent_prefix_path/youbot_description
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.sh
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/environment/ament_prefix_path.dsv
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/environment/path.sh
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/environment/path.dsv
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.bash
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.sh
+[1.390s] -- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.zsh
+[1.391s] -- Installing: /youbot/install/youbot_description/share/youbot_description/local_setup.dsv
+[1.391s] -- Installing: /youbot/install/youbot_description/share/youbot_description/package.dsv
+[1.391s] -- Installing: /youbot/install/youbot_description/share/ament_index/resource_index/packages/youbot_description
+[1.391s] -- Installing: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig.cmake
+[1.391s] -- Installing: /youbot/install/youbot_description/share/youbot_description/cmake/youbot_descriptionConfig-version.cmake
+[1.391s] -- Installing: /youbot/install/youbot_description/share/youbot_description/package.xml
+[1.394s] Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_description

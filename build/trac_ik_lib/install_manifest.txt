@@ -1,0 +1,3 @@
+/youbot/install/trac_ik_lib/lib/libtrac_ik_lib.so
+/youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/export_trac_ik_libExport.cmake
+/youbot/install/trac_ik_lib/share/trac_ik_lib/cmake/export_trac_ik_libExport-noconfig.cmake

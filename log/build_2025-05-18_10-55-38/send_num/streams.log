@@ -1,0 +1,27 @@
+[0.804s] Invoking command in '/youbot/src/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/send_num build --build-base /youbot/build/send_num/build install --record /youbot/build/send_num/install.log --single-version-externally-managed install_data
+[1.068s] running egg_info
+[1.069s] writing ../../build/send_num/send_num.egg-info/PKG-INFO
+[1.069s] writing dependency_links to ../../build/send_num/send_num.egg-info/dependency_links.txt
+[1.069s] writing entry points to ../../build/send_num/send_num.egg-info/entry_points.txt
+[1.069s] writing requirements to ../../build/send_num/send_num.egg-info/requires.txt
+[1.070s] writing top-level names to ../../build/send_num/send_num.egg-info/top_level.txt
+[1.072s] reading manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+[1.072s] adding license file 'LICENSE'
+[1.073s] writing manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+[1.073s] running build
+[1.073s] running build_py
+[1.074s] running install
+[1.074s] running install_lib
+[1.076s] running install_data
+[1.076s] running install_egg_info
+[1.078s] removing '/youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info' (and everything under it)
+[1.078s] Copying ../../build/send_num/send_num.egg-info to /youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info
+[1.080s] running install_scripts
+[1.103s] Installing bridge script to /youbot/install/send_num/lib/send_num
+[1.106s] Installing camera_server script to /youbot/install/send_num/lib/send_num
+[1.106s] Installing on_youbot script to /youbot/install/send_num/lib/send_num
+[1.106s] Installing send script to /youbot/install/send_num/lib/send_num
+[1.106s] Installing test_bridge script to /youbot/install/send_num/lib/send_num
+[1.106s] Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+[1.106s] writing list of installed files to '/youbot/build/send_num/install.log'
+[1.135s] Invoked command in '/youbot/src/send_num' returned '0': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/send_num build --build-base /youbot/build/send_num/build install --record /youbot/build/send_num/install.log --single-version-externally-managed install_data

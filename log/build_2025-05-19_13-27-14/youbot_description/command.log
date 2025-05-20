@@ -1,0 +1,3 @@
+Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+Invoked command in '/youbot/build/youbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_description -- -j4 -l4
+Invoking command in '/youbot/build/youbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_description

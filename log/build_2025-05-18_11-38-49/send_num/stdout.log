@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/send_num/send_num.egg-info/PKG-INFO
+writing dependency_links to ../../build/send_num/send_num.egg-info/dependency_links.txt
+writing entry points to ../../build/send_num/send_num.egg-info/entry_points.txt
+writing requirements to ../../build/send_num/send_num.egg-info/requires.txt
+writing top-level names to ../../build/send_num/send_num.egg-info/top_level.txt
+reading manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+running build
+running build_py
+copying send_num/pose_bridge_test.py -> /youbot/build/send_num/build/lib/send_num
+running install
+running install_lib
+copying /youbot/build/send_num/build/lib/send_num/pose_bridge_test.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge_test.py to pose_bridge_test.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/send_num/send_num.egg-info to /youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bridge script to /youbot/install/send_num/lib/send_num
+Installing camera_server script to /youbot/install/send_num/lib/send_num
+Installing on_youbot script to /youbot/install/send_num/lib/send_num
+Installing send script to /youbot/install/send_num/lib/send_num
+Installing test_bridge script to /youbot/install/send_num/lib/send_num
+Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+writing list of installed files to '/youbot/build/send_num/install.log'

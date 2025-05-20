@@ -1,0 +1,52 @@
+[3.992s] Invoking command in '/youbot/build/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /youbot/build/send_num/build
+[4.251s] running develop
+[4.435s] Invoked command in '/youbot/build/send_num' returned '0': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /youbot/build/send_num/build
+[4.436s] Invoking command in '/youbot/src/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/send_num build --build-base /youbot/build/send_num/build install --record /youbot/build/send_num/install.log --single-version-externally-managed install_data --force
+[4.673s] running egg_info
+[4.674s] writing ../../build/send_num/send_num.egg-info/PKG-INFO
+[4.674s] writing dependency_links to ../../build/send_num/send_num.egg-info/dependency_links.txt
+[4.675s] writing entry points to ../../build/send_num/send_num.egg-info/entry_points.txt
+[4.675s] writing requirements to ../../build/send_num/send_num.egg-info/requires.txt
+[4.675s] writing top-level names to ../../build/send_num/send_num.egg-info/top_level.txt
+[4.677s] reading manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+[4.677s] adding license file 'LICENSE'
+[4.678s] writing manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+[4.678s] running build
+[4.679s] running build_py
+[4.679s] running install
+[4.680s] running install_lib
+[4.681s] creating /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.681s] copying /youbot/build/send_num/build/lib/send_num/test_send.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.681s] copying /youbot/build/send_num/build/lib/send_num/test_server_copy.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.681s] copying /youbot/build/send_num/build/lib/send_num/pose_bridge_down.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.682s] copying /youbot/build/send_num/build/lib/send_num/pose_camera_server.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.682s] copying /youbot/build/send_num/build/lib/send_num/server_12.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.683s] copying /youbot/build/send_num/build/lib/send_num/send_on_youbot.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.683s] copying /youbot/build/send_num/build/lib/send_num/server_11.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.683s] copying /youbot/build/send_num/build/lib/send_num/pose_bridge_test.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.684s] copying /youbot/build/send_num/build/lib/send_num/__init__.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.684s] copying /youbot/build/send_num/build/lib/send_num/pose_bridge.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+[4.685s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/test_send.py to test_send.cpython-310.pyc
+[4.685s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/test_server_copy.py to test_server_copy.cpython-310.pyc
+[4.686s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge_down.py to pose_bridge_down.cpython-310.pyc
+[4.687s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_camera_server.py to pose_camera_server.cpython-310.pyc
+[4.688s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/server_12.py to server_12.cpython-310.pyc
+[4.689s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/send_on_youbot.py to send_on_youbot.cpython-310.pyc
+[4.689s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/server_11.py to server_11.cpython-310.pyc
+[4.690s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge_test.py to pose_bridge_test.cpython-310.pyc
+[4.691s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/__init__.py to __init__.cpython-310.pyc
+[4.691s] byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge.py to pose_bridge.cpython-310.pyc
+[4.693s] running install_data
+[4.693s] copying resource/send_num -> /youbot/install/send_num/share/ament_index/resource_index/packages
+[4.693s] copying package.xml -> /youbot/install/send_num/share/send_num
+[4.693s] running install_egg_info
+[4.695s] Copying ../../build/send_num/send_num.egg-info to /youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info
+[4.696s] running install_scripts
+[4.717s] Installing bridge script to /youbot/install/send_num/lib/send_num
+[4.717s] Installing camera_server script to /youbot/install/send_num/lib/send_num
+[4.718s] Installing on_youbot script to /youbot/install/send_num/lib/send_num
+[4.718s] Installing send script to /youbot/install/send_num/lib/send_num
+[4.718s] Installing test_bridge script to /youbot/install/send_num/lib/send_num
+[4.718s] Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+[4.718s] writing list of installed files to '/youbot/build/send_num/install.log'
+[4.742s] Invoked command in '/youbot/src/send_num' returned '0': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/send_num build --build-base /youbot/build/send_num/build install --record /youbot/build/send_num/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,1 @@
+/youbot/src/trac_ik/trac_ik_kinematics/trac_ik_kinematics_plugin/include/trac_ik_kinematics_plugin/trac_ik_kinematics_plugin.h

@@ -1,0 +1,48 @@
+running develop
+running egg_info
+writing ../../build/send_num/send_num.egg-info/PKG-INFO
+writing dependency_links to ../../build/send_num/send_num.egg-info/dependency_links.txt
+writing entry points to ../../build/send_num/send_num.egg-info/entry_points.txt
+writing requirements to ../../build/send_num/send_num.egg-info/requires.txt
+writing top-level names to ../../build/send_num/send_num.egg-info/top_level.txt
+reading manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/send_num/send_num.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/test_send.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/test_server_copy.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/pose_bridge_down.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/pose_camera_server.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/server_12.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/send_on_youbot.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/server_11.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/pose_bridge_test.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/__init__.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+copying /youbot/build/send_num/build/lib/send_num/pose_bridge.py -> /youbot/install/send_num/lib/python3.10/site-packages/send_num
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/test_send.py to test_send.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/test_server_copy.py to test_server_copy.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge_down.py to pose_bridge_down.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_camera_server.py to pose_camera_server.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/server_12.py to server_12.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/send_on_youbot.py to send_on_youbot.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/server_11.py to server_11.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge_test.py to pose_bridge_test.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/__init__.py to __init__.cpython-310.pyc
+byte-compiling /youbot/install/send_num/lib/python3.10/site-packages/send_num/pose_bridge.py to pose_bridge.cpython-310.pyc
+running install_data
+copying resource/send_num -> /youbot/install/send_num/share/ament_index/resource_index/packages
+copying package.xml -> /youbot/install/send_num/share/send_num
+running install_egg_info
+Copying ../../build/send_num/send_num.egg-info to /youbot/install/send_num/lib/python3.10/site-packages/send_num-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bridge script to /youbot/install/send_num/lib/send_num
+Installing camera_server script to /youbot/install/send_num/lib/send_num
+Installing on_youbot script to /youbot/install/send_num/lib/send_num
+Installing send script to /youbot/install/send_num/lib/send_num
+Installing test_bridge script to /youbot/install/send_num/lib/send_num
+Installing test_server_copy script to /youbot/install/send_num/lib/send_num
+writing list of installed files to '/youbot/build/send_num/install.log'

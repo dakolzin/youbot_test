@@ -1,0 +1,44 @@
+[0.012s] Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[0.100s] [100%] Built target script
+[0.120s] Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --build /youbot/build/youbot_moveit -- -j4 -l4
+[0.122s] Invoking command in '/youbot/build/youbot_moveit': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit
+[0.130s] -- Install configuration: ""
+[0.131s] -- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/package_run_dependencies/youbot_moveit
+[0.131s] -- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/parent_prefix_path/youbot_moveit
+[0.132s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.sh
+[0.132s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/ament_prefix_path.dsv
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.sh
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/environment/path.dsv
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.bash
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.sh
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.zsh
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/local_setup.dsv
+[0.133s] -- Installing: /youbot/install/youbot_moveit/share/youbot_moveit/package.dsv
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/ament_index/resource_index/packages/youbot_moveit
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig.cmake
+[0.133s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/cmake/youbot_moveitConfig-version.cmake
+[0.134s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/package.xml
+[0.134s] -- Up-to-date: /youbot/install/youbot_moveit/lib/youbot_moveit/script
+[0.137s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch
+[0.138s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/warehouse_db.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/spawn_controllers.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/rsp.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/demo.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/moveit_rviz.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/move_group.launch.py
+[0.139s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/setup_assistant.launch.py
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/launch/static_virtual_joint_tfs.launch.py
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit.rviz
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.ros2_control.xacro
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/joint_limits.yaml
+[0.142s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.urdf.xacro
+[0.144s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/moveit_controllers.yaml
+[0.145s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/kinematics.yaml
+[0.146s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/initial_positions.yaml
+[0.146s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/ros2_controllers.yaml
+[0.147s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/youbot.srdf
+[0.148s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/ompl_planning.yaml
+[0.149s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/config/pilz_cartesian_limits.yaml
+[0.149s] -- Up-to-date: /youbot/install/youbot_moveit/share/youbot_moveit/.setup_assistant
+[0.149s] Invoked command in '/youbot/build/youbot_moveit' returned '0': AMENT_PREFIX_PATH=/youbot/install/youbot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/youbot/install/youbot_description:/opt/ros/humble /usr/bin/cmake --install /youbot/build/youbot_moveit

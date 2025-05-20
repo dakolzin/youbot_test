@@ -1,0 +1,3 @@
+[0.740s] Invoking command in '/youbot/build/send_num': PYTHONPATH=/youbot/build/send_num/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/youbot/install/send_num/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /youbot/build/send_num/build
+[1.049s] running develop
+[1.217s] Removing /youbot/install/send_num/lib/python3.10/site-packages/send-num.egg-link (link to .)

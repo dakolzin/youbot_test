@@ -1,0 +1,18 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/nlopt_ik.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/trac_ik_lib.dir/src/trac_ik.cpp.o[0m
+In file included from [01m[K/youbot/src/trac_ik/trac_ik_lib/src/nlopt_ik.cpp:30[m[K:
+[01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/nlopt_ik.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+   36 | #include [01;31m[K"nlopt.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/trac_ik.hpp:33[m[K,
+                 from [01m[K/youbot/src/trac_ik/trac_ik_lib/src/trac_ik.cpp:30[m[K:
+[01m[K/youbot/src/trac_ik/trac_ik_lib/include/trac_ik/nlopt_ik.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Knlopt.hpp: No such file or directory
+   36 | #include [01;31m[K"nlopt.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/trac_ik_lib.dir/build.make:104: CMakeFiles/trac_ik_lib.dir/src/trac_ik.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/trac_ik_lib.dir/build.make:90: CMakeFiles/trac_ik_lib.dir/src/nlopt_ik.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/trac_ik_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
